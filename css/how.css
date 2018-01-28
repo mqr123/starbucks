@@ -1,0 +1,140 @@
+
+  /*网页最大的图片部分*/
+  .from{
+    width: 100%;
+    position: relative;
+    margin-top: 100px;
+    text-align: center;
+  }
+  .from .photo img{
+    width: 100%;
+  }
+  /*遮罩效果*/
+  .mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .from p:nth-of-type(1){
+    text-align: left;
+    color: rgb(181, 159, 119);
+    position: absolute;
+    top: 20%;
+    left: 45%;
+  }
+  .from p:nth-of-type(2){
+    text-align: left;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    color: white;
+    font-size: 40px;
+  }
+  .from p:nth-of-type(3){
+    text-align: left;
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    width: 55%;
+    color: white;
+    font-size: 20px;
+  }
+  /*网页内容部分*/
+  .content{
+    padding-top: 100px;
+    background: rgb(240, 240, 240);
+    width: 100%;
+    padding-bottom: 100px;
+
+  }
+  .pot{
+    width: 40%;
+    margin: 0 auto;
+    color: rgb(112, 112, 112);
+  }
+  .pot::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .pot1{
+    float: left;
+    width: 25%;
+  }
+  /*下划线效果*/
+  .pot2 .potTop:hover{
+    text-decoration: underline;
+  }
+  .pot2 .potBottom:hover{
+    text-decoration: underline;
+  }
+  .pot1 img{
+    width: 154px;
+    height: 154px;
+    border-radius: 154px;
+  }
+  .pot2{
+    float: right;
+    width: 74%;
+    position: relative;
+  }
+  .potTop{
+    position: absolute;
+    top: 50px;
+    left: 25%;
+    font-size: 30px;
+  }
+  .potBottom{
+    position: absolute;
+    top: 100px;
+    left: 25%;
+    font-size: 1.6rem;
+  }
+  /*第二部分*/
+  .hand1{
+    padding-top: 50px;
+  }
+  /*第3部分*/
+  .hand2{
+    padding-top: 50px;
+  }
+  /*第4部分*/
+  .hand3{
+    padding-top: 50px;
+  }
+  /* 网页底部*/
+  footer{
+    width: 100%;
+    height: 130px;
+    background: rgb(41, 41, 41);
+    position: relative;
+  }
+  footer::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .left{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    font-size: 10px;
+    color: rgb(163, 163, 163);
+    float: left;
+  }
+  ul li{
+    margin: 4px;
+    list-style: none;
+  }
+  .right{
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    float: right;
+  }
+  .right img{
+    margin: 20px 10px;
+  }

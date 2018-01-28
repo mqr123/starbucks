@@ -1,0 +1,222 @@
+html{
+  min-width: 1400px;
+}
+.content{
+  margin-top: 100px;
+  width: 100%;
+  background: white;
+  font-size: 0;
+}
+
+@-webkit-keyframes Animate{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+/*饮品*/
+.content .banner{
+  width: 100%;
+  height: 278px;
+  /*background: red;*/
+  background: url(../../img/niceFood/drink_mainbg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  animation: Animate 50s linear infinite forwards;
+}
+/*星巴克美食*/
+.content .banner_xbkfood{
+  width: 100%;
+  height: 278px;
+  background: url(../../img/niceFood/xbkFood_mainbg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  animation: Animate 50s linear infinite forwards;
+}
+/*星巴克coffee*/
+.content .banner_xbkcoffee{
+  width: 100%;
+  height: 278px;
+  background: url(../../img/niceFood/xbkCoffee_mainbg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  animation: Animate 50s linear infinite forwards;
+}
+/*星巴克VIAcoffee*/
+.content .banner_xbkVIA{
+  width: 100%;
+  height: 278px;
+  background: url(../../img/niceFood/xbkVIA_mainbg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  animation: Animate 50s linear infinite forwards;
+}
+.content h4{
+  display: inline-block;;
+  font-size: 14px;
+  color: rgb(169, 142, 103);
+  margin-top: 106px;
+}
+.content h1{
+  color: white;
+  font-size: 30px;
+  margin: 25px;
+}
+
+
+
+
+.cont_1{
+  width: 100%;
+  text-align: center;
+  margin-top: 80px;
+}
+.title{
+  width: 940px;
+  height: 70px;
+  /*background: cyan;*/
+  margin: 60px auto;
+}
+.title h2{
+  font-size:22px;
+  line-height: 1.62;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #525252;
+  /*background: red;*/
+}
+.title p{
+  width: 132px;
+  border-bottom: 1px solid rgb(221, 221, 221);
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+
+.conle{
+  width: 70%;
+  /*background: orange;*/
+  margin: 0 auto;
+}
+.conle::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.conle .prebox{
+  width: 49%;
+  /*height: 336px;*/
+  /*background: purple;*/
+  float: left;
+  margin-top: 30px;
+  margin-bottom: 70px;
+  margin-right: 1%;
+}
+
+@-webkit-keyframes imgAnimate{
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.1);
+  }
+}
+.prebox .imgbg{
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+.pic{
+  border-radius: 50%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  /*background: blue;*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  transition: all 0.35s ease-in-out;
+  transform-origin: 95% 40%;
+  border: 1px solid #eee;
+
+}
+.mask{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 10;
+   border-radius: 100%;
+   background: #eeeeee;
+   transition: all 0.35s ease-in-out;
+   overflow: hidden;
+}
+.mask_txt{
+  padding: 40px;
+  color: #666;
+  font-size: 14px;
+  line-height: 20px;
+  text-indent: 30px;
+  display: inline-block;
+  margin: 0 auto;
+  font-weight: 100;
+}
+
+.dingzi{
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border-radius: 50%;
+  top: 40%;
+  left: 95%;
+  margin: -5px 0 0 -5px;
+  background: gray;
+  box-shadow: 0 0 1px #333;
+  z-index: 12;
+}
+.imgbg:hover .pic{
+    transform: rotate(-120deg);
+}
+
+
+.prebox a{
+  text-decoration: none;
+  font-weight: 300;
+  color: #525252;
+  font-size: 24px;
+  line-height: 1.44;
+  display: block;
+  margin-top: 35px;
+}
+.prebox a:hover{
+  color: rgb(169, 142, 103);
+  text-decoration: underline;
+}
+.prebox p{
+  width: 364px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #707070;
+  line-height: 1.8;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 25px;
+  min-height: 80px;
+}
+.prebox p:hover{
+  text-decoration: underline;
+}

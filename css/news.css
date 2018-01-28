@@ -1,0 +1,243 @@
+body{
+  min-width: 1450px;
+  text-align: left;
+}
+  /*网页最大的照片部分*/
+  .aboutUs{
+    width: 100%;
+    position: relative;
+    margin-top: 100px;
+  }
+  .photo{
+    width: 100%;
+    height: 275px;
+  }
+  .photo img{
+    width: 100%;
+    height: 275px;
+  }
+  .adv{
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    width: 35px;
+    height: 20px;
+    line-height: 20px;
+    background: rgb(71, 71, 74);
+  }
+  .us{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    font-size: 15px;
+    color: rgb(183, 162, 130);
+  }
+  .company{
+    position: absolute;
+    top: 40%;
+    left: 47%;
+    font-size: 40px;
+    color: white;
+  }
+  .w5{
+    position: absolute;
+    top: 83%;
+    left: 0;
+    width: 100%;
+    height: 47px;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .welcome{
+    position: absolute;
+    top: 0;
+    left: 35%;
+    height: 47px;
+    line-height: 47px;
+    font-size: 20px;
+  }
+  .w1{
+    float: left;
+    color:white;
+  }
+  .w2{
+    float: left;
+    color: rgb(183, 162, 130);
+  }
+  /* welcome下的w2效果*/
+  .welcome .w2:hover{
+    text-decoration: underline;
+  }
+  .w3{
+    float: left;
+    color: white;
+  }
+  .w4{
+    float: left;
+    color: white;
+  }
+  .welcome::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+    /*网页中内容部分 第一部分*/
+  /*浮动方法达不到网页的效果*/
+  .content{
+    width: 100%;
+    margin-top: 80px;
+  }
+  .content1{
+    width: 60%;
+    margin: 0 auto;
+    border-bottom: 1px solid gray;
+    padding-bottom: 80px;
+  }
+  .content1::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .Cleft{
+    width: 40%;
+    float: left;
+  }
+  .Cleft img{
+    width:100%;
+    height: 100%;
+  }
+  .Cright{
+    width: 59%;
+    float: right;
+    background: green;
+    position: relative;
+    color: rgb(112, 112, 112);
+  }
+  .c1{
+    position: absolute;
+    top: 5px;
+    left: 5%;
+  }
+  .c2{
+    position: absolute;
+    top: 70px;
+    left: 5%;
+    font-size: 3.3rem;
+  }
+  .c3{
+    position: absolute;
+    top: 150px;
+    left: 5%;
+    font-size: 1.6rem;
+    line-height: 25px;
+  }
+  /*.Cright 下的.c2的hover 效果*/
+  .Cright .c2:hover{
+    color: rgb(181, 159, 119);
+  }
+  /*第二部分*/
+  .hand1{
+    padding: 80px;
+  }
+  /*第3部分*/
+  .hand2{
+    padding: 80px;
+  }
+  /*第4部分*/
+  .hand3{
+    padding: 80px;
+  }
+  /*第5部分*/
+  .hand4{
+    padding: 80px;
+  }
+  /*第6部分*/
+  .hand5{
+    padding: 80px;
+  }
+  /*第7部分*/
+  .hand6{
+    padding: 80px;
+  }
+  /*第8部分*/
+  .hand7{
+    padding: 80px;
+  }
+  /*第9部分*/
+  .hand8{
+    padding: 80px;
+  }
+  /*第10部分*/
+  .hand9{
+    padding: 80px;
+  }
+  /*页码内容*/
+  .page{
+    width: 100%;
+    height: 270px;
+  }
+  .page1{
+    text-align: center;
+    width: 30%;
+    height: 270px;
+    margin: 0 auto;
+    line-height: 270px;
+  }
+  .page1 span{
+    width: 30px;
+    height: 36px;
+    line-height: 36px;
+    /*行内块级元素*/
+    display: inline-block;
+    border: 1px solid gray;
+    color: rgb(181, 159, 119);
+    text-decoration: none;
+  }
+  .page1 span img:nth-of-type(1){
+    margin-bottom: -12px;
+  }
+  .page1 span:nth-of-type(2){
+    background: rgb(32, 113, 71);
+    color: white;
+  }
+  .page1 span:hover{
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .page1 span:nth-of-type(1){
+    background: white;
+  }
+  .page1 span:nth-of-type(2):hover{
+    background: rgb(32, 113, 71);
+  }
+  /* 网页底部*/
+  footer{
+    width: 100%;
+    height: 130px;
+    background: rgb(41, 41, 41);
+    position: relative;
+  }
+  footer::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .left{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    font-size: 10px;
+    color: rgb(163, 163, 163);
+    float: left;
+  }
+  ul li{
+    margin: 4px;
+    list-style: none;
+  }
+  .right{
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    float: right;
+  }
+  .right img{
+    margin: 20px 10px;
+  }

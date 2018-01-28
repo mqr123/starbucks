@@ -1,0 +1,511 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 10px;
+  text-align: left;
+  min-width: 1200px;
+}
+/*手机图片动画*/
+@-webkit-keyframes phone{
+        0%{
+          transform: translateX(0px);
+        }
+        20%{
+          transform: translateX(0px);
+        }
+        25%{
+          transform: translateX(-200px);
+        }
+        45%{
+          transform: translateX(-200px);
+        }
+        50%{
+          transform: translateX(-400px);
+        }
+        70%{
+          transform: translateX(-400px);
+        }
+        75%{
+          transform: translateX(-600px);
+        }
+        95%{
+          transform: translateX(-600px);
+        }
+        100%{
+          transform: translateX(-800px);
+        }
+      }
+/*第一个小圆点动画*/
+@-webkit-keyframes span1{
+  0%{
+    background: white;
+  }
+  22%{
+    background: white;
+  }
+  23%{
+    background: gray;
+  }
+  100%{
+    background: gray;
+  }
+}
+/*第二个小圆点动画*/
+@-webkit-keyframes span2{
+  0%{
+    background: gray;
+  }
+  22%{
+    background: gray;
+  }
+  23%{
+    background: white;
+  }
+  47%{
+    background: white;
+  }
+  48%{
+    background: gray;
+  }
+  100%{
+    background: gray;
+  }
+}
+/*第三个小圆点动画*/
+@-webkit-keyframes span3{
+  0%{
+    background: gray;
+  }
+  47%{
+    background: gray;
+  }
+  48%{
+    background: white;
+  }
+  72%{
+    background: white;
+  }
+  73%{
+    background: gray;
+  }
+  100%{
+    background: gray;
+  }
+}
+/*第四个小圆点动画*/
+@-webkit-keyframes span4{
+  0%{
+    background: gray;
+  }
+  72%{
+    background: gray;
+  }
+  73%{
+    background: white;
+  }
+  100%{
+    background: white;
+  }
+}
+/*文字层轮播*/
+@-webkit-keyframes wordMov{
+  0%{
+    transform: translateY(0px);
+  }
+  20%{
+    transform: translateY(0px);
+  }
+  25%{
+    transform: translateY(-40px);
+  }
+  45%{
+    transform: translateY(-40px);
+  }
+  50%{
+    transform: translateY(-80px);
+  }
+  70%{
+    transform: translateY(-80px);
+  }
+  75%{
+    transform: translateY(-120px);
+  }
+  95%{
+    transform: translateY(-120px);
+  }
+  100%{
+    transform: translateY(-160px);
+  }
+}
+/*红心动画*/
+@-webkit-keyframes heart{
+  from{
+    transform: translateY(0px);
+  }
+  to{
+    transform: translateY(-320px);
+  }
+}
+/*小车动画*/
+@-webkit-keyframes car{
+  from{
+    transform: translateX(-300px);
+  }
+  to{
+    transform: translate(0);
+  }
+}
+/*底部链接动画*/
+@-webkit-keyframes aMove{
+  from{
+    transform: scale(0);
+  }
+  to{
+    transform: scale(1);
+  }
+}
+.wrap{
+  background: white;
+}
+.content{
+  margin: 100px auto;
+}
+/*轮播图*/
+.appScroll{
+ width: 100%;
+ height: 500px;
+ background: url(../../img/app/banner.jpeg)  no-repeat;
+ background-size: cover;
+ position: relative;
+ text-align: left;
+}
+/*主题文字*/
+.appScroll .focus1{
+  width: 600px;
+  font-size: 4rem;
+  color: white;
+  padding: 50px 100px;
+}
+/*下载图标*/
+.appScroll a:nth-of-type(1){
+  display: inline-block;
+  margin: 30px 100px;
+  margin-right: 0;
+}
+.appScroll .focus2{
+  width: 600px;
+  font-size: 2rem;
+  color: white;
+  margin: 0 100px;
+  line-height: 30px;
+}
+/*小手机图片轮播*/
+.appScroll > .phone{
+  width: 200px;
+  height: 300px;
+  border-image-source: url(../../img/app/phone.png);
+  border-image-slice: 95 40 89 40;
+  border-width: 95px 40px 89px 40px;
+  border-image-width: 95px 40px 89px 40px;
+  border-style: solid;
+  border-image-repeat: round;
+  overflow: hidden;
+  position: absolute;
+  top: 35px;
+  right: 80px;
+}
+.phone .picture{
+  width: 1000px;
+  font-size: 0;
+  animation: phone 10s infinite;
+}
+.phone .picture img{
+  width: 200px;
+  height: 300px;
+}
+/*边框底线*/
+ .appScroll > .line{
+   width: 100%;
+   height: 70px;
+   background: url(../../img/app/line.png);
+   position: absolute;
+   bottom: 0px;
+   left: 0;
+ }
+ /*控制小圆点*/
+  .line .page{
+    position: absolute;
+    top: 40px;
+    right: 120px;
+  }
+  .line .page > span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: gray;
+    margin: 0 10px;
+  }
+  .line .page span:nth-child(1){
+    animation: span1 10s infinite;
+  }
+  .line .page span:nth-child(2){
+    animation: span2 10s infinite;
+  }
+  .line .page span:nth-child(3){
+    animation: span3 10s infinite;
+  }
+  .line .page span:nth-child(4){
+    animation: span4 10s infinite;
+  }
+  /*文字层轮播*/
+  .line > .word{
+    width: 1200px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 20px;
+    overflow: hidden;
+  }
+  .line > .word p{
+    font-size: 2.5rem;
+    color: rgb(100, 100, 100);
+    text-align: center;
+    line-height: 40px;
+    animation: wordMov 10s infinite;
+  }
+
+
+/*第一块*/
+.step1{
+  width: 100%;
+}
+.step1 > h3{
+  font-size: 4.5rem;
+  padding: 100px 0;
+  text-align: center;
+  color: rgb(85, 85, 85);
+}
+.step1_1{
+  width: 1000px;
+  margin: 0 auto;
+}
+.step1_1::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+/*左边*/
+.step1_1 .step1_left{
+  width: 600px;
+  float: left;
+}
+.step1_left span{
+  width: 500px;
+  display: inline-block;
+  font-size: 3rem;
+  color: rgb(100, 100, 100);
+  line-height: 100px;
+}
+.step1_left p{
+  width: 500px;
+  font-size: 2rem;
+  color: rgb(110, 110, 110);
+  line-height: 40px;
+}
+/*右边*/
+.step1_1 .step1_right{
+  width: 400px;
+  float: right;
+  position: relative;
+}
+.step1_right img:nth-child(2){
+  width: 480px;
+  height: 400px;
+}
+.step1_right img:nth-child(1){
+  position: absolute;
+  bottom: 20px;
+  left: -20px;
+  animation: heart 2s ease 1s forwards;
+}
+
+/*第二块*/
+.step2{
+  width: 100%;
+}
+.step2_1{
+  width: 1000px;
+  margin: 100px auto;
+}
+.step2_1::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.step2_left{
+  float: left;
+  width: 600px;
+}
+.step2_left img{
+  animation: car 2s linear 3s forwards;
+}
+.step2_right{
+  float: right;
+}
+.step2_right span{
+  width: 400px;
+}
+.step2_right p{
+  width: 400px;
+}
+/*第三块*/
+.step3_right{
+  width: 400px;
+  float: right;
+}
+.step3_right img{
+  width: 480px;
+  height: 400px;
+}
+/*第四块*/
+.step4{
+  margin: 100px auto;
+}
+.step4_left{
+  float: left;
+}
+.step4_right{
+  float: right;
+}
+.step4_right span{
+  width: 400px;
+  margin-left: 200px;
+}
+.step4_right p{
+  width: 400px;
+  margin-left: 200px;
+}
+/*第五块和第三块相同*/
+.step5{
+  margin: 100px 0;
+}
+/*第六块：应用下载*/
+.step6{
+  width: 100%;
+  background: rgb(240, 240, 240);
+  padding: 50px 0;
+}
+/*上部：文字提示*/
+.step6_top{
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.step6_top span:nth-child(1){
+  display: inline-block;
+  width: 400px;
+  font-size: 3rem;
+  color: rgb(65, 65, 65);
+  line-height: 80px;
+  border-bottom: 1px solid rgb(213, 213, 213);
+}
+.step6_top span:nth-child(2){
+  display: block;
+  font-size: 2rem;
+  color: rgb(80, 80, 80);
+  line-height: 80px;
+}
+/*下部：应用链接*/
+.step6_bottom{
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.step6_bottom > a{
+  display: inline-block;
+  font-size: 2rem;
+  color: rgb(80, 80, 80);
+  text-decoration: none;
+  padding: 20px 30px;
+  margin: 20px 20px;
+  background: rgb(250, 250, 250);
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px gray;
+}
+.step6_bottom a:nth-child(1){
+  animation: aMove 5s ease 5s 3;
+}
+.step6_bottom a:nth-child(2){
+  animation: aMove 5s ease 5.5s 3;
+}
+.step6_bottom a:nth-child(3){
+  animation: aMove 5s ease 6s 3;
+}
+.step6_bottom a:nth-child(4){
+  animation: aMove 5s ease 6.5s 3;
+}
+.step6_bottom a:nth-child(5){
+  animation: aMove 5s ease 7s 3;
+}
+.step6_bottom a:nth-child(6){
+  animation: aMove 5s ease 7.5s 3;
+}
+.step6_bottom a:nth-child(7){
+  animation: aMove 5s ease 8s 3;
+}
+.step6_bottom a:nth-child(8){
+  animation: aMove 5s ease 8.5s 3;
+}
+.step6_bottom a:nth-child(9){
+  animation: aMove 5s ease 9s 3;
+}
+.step6_bottom > a:hover{
+  box-shadow: 0px 0px 20px rgba(8, 37, 161, 0.74);
+}
+/*第七块：常见问题*/
+.step7{
+  width: 1200px;
+  margin: 100px auto;
+}
+.step7::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+/*左边：问题*/
+.step7_left{
+  width: 300px;
+  float: left;
+  margin-left: 100px;
+  padding: 50px 80px;
+  background: rgb(234, 234, 234);
+}
+.step7_left p{
+  font-size: 1.8rem;
+  color: rgb(86, 86, 86);
+}
+.step7_left a{
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: rgb(166, 142, 100);
+  padding: 20px 30px;
+  border: 2px solid rgb(166, 142, 100);
+  margin-top: 50px;
+}
+.step7_left a:hover{
+  color: white;
+  background: rgb(166, 142, 100);
+}
+/*右边：联系*/
+.step7_right{
+  background: rgb(31, 31, 31);
+  float: right;
+  margin-left: 0px;
+  margin-right: 100px;
+}
+.step7_right p{
+  color: white;
+}

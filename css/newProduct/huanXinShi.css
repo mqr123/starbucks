@@ -1,0 +1,280 @@
+html{
+  min-width: 1420px;
+}
+.content{
+  margin-top: 100px;
+  width: 100%;
+  background: white;
+  font-size: 0;
+  padding-bottom: 100px;
+}
+
+.cont_1{
+  width: 100%;
+  height: 794px;
+  background: url(../../img/newProduct/huanxinshimain.jpg) center no-repeat;
+  /*background-size: contain;*/
+  overflow: hidden;
+}
+@-webkit-keyframes bgAnimate{
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(10);
+  }
+}
+.cont_1 .bg{
+  width: 100%;
+  height: 794px;
+  animation: bgAnimate 5s ease forwards;
+}
+.cont_2{
+  width: 100%;
+  height: 400px;
+  background: rgb(240, 240, 240);
+  text-align: center;
+}
+.cont_2 p{
+  font-size: 19px;
+  padding: 114px 520px;
+  line-height: 30px;
+}
+.cont_3{
+  width: 100%;
+  font-size: 14px;
+}
+
+/*左字右图*/
+.cont_3 .pre_a{
+  width: 80%;
+  height: 556px;
+  /*background: gold;*/
+  margin-top: 100px;
+  margin-left: 10%;
+  position: relative;
+  overflow: hidden;
+
+}
+/*字块*/
+.pre_a .left{
+  width: 40%;
+  float: left;
+  /*background: cyan;*/
+  text-align: left;
+  padding: 55px 30px 0px 90px;
+}
+.cont_3 h1,h2{
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 45px;
+}
+.cont_3 p{
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+  color: rgb(120, 116, 112);
+  margin-top: 25px;
+}
+@-webkit-keyframes rightPicAnimate1{
+  0%{
+    transform: translateY(0);
+  }
+  25%{
+    transform: translateY(0);
+  }
+  40%{
+    transform: translateY(-556px);
+  }
+  65%{
+    transform: translateY(-556px);
+  }
+  80%{
+    transform: translateY(-1112px);
+  }
+  100%{
+    transform: translateY(-1112px);
+  }
+}
+@-webkit-keyframes rightPicAnimate2{
+  0%{
+    transform: translateY(0);
+  }
+  25%{
+    transform: translateY(0);
+  }
+  40%{
+    transform: translateY(556px);
+  }
+  65%{
+    transform: translateY(556px);
+  }
+  80%{
+    transform: translateY(1112px);
+  }
+  100%{
+    transform: translateY(1112px);
+  }
+}
+/*图块*/
+.pre_a .right img{
+  float: left;
+  width: 556px;
+}
+.pre_a:nth-child(1) .right{
+  /*background: red;*/
+  width: 556px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+ .pre_a:nth-child(5) .right{
+  /*background: red;*/
+  width: 556px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.pre_a:nth-child(3) .right{
+  background: blue;
+  width: 556px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.pre_a:nth-child(7) .right{
+  background: blue;
+  width: 556px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.pre_a:nth-child(1) .right img{
+  animation: rightPicAnimate1 15s linear 0s forwards infinite;
+}
+.pre_a:nth-child(3) .right img{
+  animation: rightPicAnimate2 15s linear 2s forwards infinite;
+}
+.pre_a:nth-child(5) .right img{
+  animation: rightPicAnimate1 15s linear 0s forwards infinite;
+}
+.pre_a:nth-child(7) .right img{
+  animation: rightPicAnimate2 15s linear 2s forwards infinite;
+}
+
+@-webkit-keyframes rightPicAnimate3{
+  0%{
+    transform: translateX(0);
+  }
+  25%{
+    transform: translateX(0);
+  }
+  40%{
+    transform: translateX(556px);
+  }
+  65%{
+    transform: translateX(556px);
+  }
+  80%{
+    transform: translateX(1112px);
+  }
+  100%{
+    transform: translateX(1112px);
+  }
+}
+@-webkit-keyframes rightPicAnimate4{
+  0%{
+    transform: translateX(0);
+  }
+  25%{
+    transform: translateX(0);
+  }
+  40%{
+    transform: translateX(-556px);
+  }
+  65%{
+    transform: translateX(-556px);
+  }
+  80%{
+    transform: translateX(-1112px);
+  }
+  100%{
+    transform: translateX(-1112px);
+  }
+}
+/*左图右字*/
+.cont_3 .pre_b{
+  width: 80%;
+  height: 556px;
+  margin-top: 100px;
+  margin-left: 10%;
+  /*background: purple;*/
+  position: relative;
+  overflow: hidden;
+}
+
+.pre_b:nth-child(2) .left{
+  /*background: blue;*/
+  width: 556px;
+  position: absolute;
+  top: 0;
+  left:0;
+  overflow: hidden;
+}
+.pre_b:nth-child(6) .left{
+  /*background: blue;*/
+  width: 556px;
+  position: absolute;
+  top: 0;
+  left:0;
+  overflow: hidden;
+}
+.pre_b:nth-child(4) .left{
+  /*background: red;*/
+  width: 1668px;
+  position: absolute;
+  top: 0;
+  left: -1112px;
+  overflow: hidden;
+}
+.pre_b:nth-child(8) .left{
+  /*background: red;*/
+  width: 1668px;
+  position: absolute;
+  top: 0;
+  left: -1112px;
+  overflow: hidden;
+}
+.pre_b:nth-child(2) .left .scroll{
+  width: 1668px;
+}
+.pre_b:nth-child(6) .left .scroll{
+  width: 1668px;
+}
+
+.pre_b .left img{
+  float: left;
+  width: 556px;
+}
+.pre_b:nth-child(2) .left img{
+  animation: rightPicAnimate4 15s linear 4s forwards infinite;
+}
+.pre_b:nth-child(4) .left img{
+  animation: rightPicAnimate3 15s linear 6s forwards infinite;
+}
+.pre_b:nth-child(6) .left img{
+  animation: rightPicAnimate4 15s linear 4s forwards infinite;
+}
+.pre_b:nth-child(8) .left img{
+  animation: rightPicAnimate3 15s linear 6s forwards infinite;
+}
+
+/*字块*/
+.pre_b .right{
+  width: 40%;
+  float: right;
+  /*background: cyan;*/
+  text-align: left;
+  padding: 55px 30px 0px 100px;
+}

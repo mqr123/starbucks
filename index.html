@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Page-Enter" content="RevealTrans(duration=2,Transitionv=10)">
+    <title>首页 | 星巴克</title>
+    <link rel="shortcut icon" href="img/public/favicon.ico">
+    <link rel="stylesheet" href="css/public/header.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/index.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/public/footer.css" media="screen" title="no title" charset="utf-8">
+    <style media="screen">
+    .head_mid:hover .logo {
+        transform: rotateX(-120deg);
+    }
+    </style>
+  </head>
+
+
+  <body style="min-width:1350px">
+    <div class="wrap">
+
+      <!-- 侧栏 -->
+      <!-- 利用target锚点跳转方式实现侧拉 -->
+      <div id="window">
+        <div class="mainMask"><a href="#"></a></div>
+
+         <ul class="list_other">
+           <li><a href="https://www.starbucks.com.cn/en">English</a></li>
+           <li><a href="http://www.starbucks.com.cn/cn/stores">星巴克门店</a></li>
+           <li><a href="https://starbucks.tmall.com/">天猫旗舰店</a></li>
+         </ul>
+         <ul class="list_home">
+           <li><a href="#">首页</a></li>
+           <li>
+             <a href="#">
+               新品推荐
+               <img src="img/public/menu_icon_right.png" alt="" />
+             </a>
+             <div class="newProductitem">
+                <a href="page/newProduct/newProduct.html">新年送出新心意</a>
+                <a href="page/newProduct/huanXinShi.html">星巴克焕新食</a>
+                <a href="page/newProduct/dangjixinpin.html">当季新品</a>
+             </div>
+
+           </li>
+           <li><a href="page/club.html">星享俱乐部</a></li>
+           <li><a href="page/app.html">星巴克移动应用</a></li>
+           <li><a href="page/card.html">星礼卡</a></li>
+           <li>
+             <a href="#">
+               咖啡文化
+               <img src="img/public/menu_icon_right.png" alt="" />
+             </a>
+             <div class="coffeeitem">
+                <a href="page/coffeeHistory.html">咖啡文化</a>
+                <a href="page/TM.html">星巴克臻选™咖啡</a>
+                <a href="page/how.html">如何冲泡咖啡</a>
+             </div>
+           </li>
+           <li>
+             <a href="#">
+               饮品美食
+               <img src="img/public/menu_icon_right.png" alt="" />
+             </a>
+             <div class="nicefooditem">
+                <a href="page/niceFood/drink.html">饮品</a>
+                <a href="page/niceFood/starbucksFood.html">星巴克美食</a>
+                <a href="page/niceFood/starbucksCoffee.html">星巴克咖啡</a>
+                <a href="page/niceFood/starbucksVIA.html">星巴克VIA® 免煮咖啡</a>
+                <a href="page/niceFood/teavana.html">茶瓦纳™</a>
+             </div>
+           </li>
+           <li>
+             <a href="#">
+               关于我们
+               <img src="img/public/menu_icon_right.png" alt="" />
+             </a>
+             <div class="aboutusItem">
+                <a href="page/news.html">企业新闻</a>
+                <a href="page/values.html">我们的使命和价值观</a>
+                <a href="page/duty.html">星巴克责任</a>
+                <a href="page/china.html">工作在星巴克中国</a>
+                <a href="page/join.html">加入星巴克</a>
+                <a href="page/chinain.html">星巴克在中国</a>
+                <a href="page/history.html">历史回顾</a>
+             </div>
+           </li>
+           <li>
+             <a href="#">
+               帮助中心
+               <img src="img/public/menu_icon_right.png" alt="" />
+             </a>
+             <div class="helperItem">
+                <a href="page/question/question1.html">常见问题</a>
+                <a href="page/contact.html">联系我们</a>
+                <a href="page/terms.html">使用条款</a>
+                <a href="page/privacy.html">隐私权政策</a>
+             </div>
+           </li>
+         </ul>
+      </div>
+
+
+
+      <!-- 页头 -->
+      <header>
+        <div class="head_left">
+          <a href="#window" target="_parent">
+            <figure>
+              <img src="img/public/menu_icon.png" alt="" />
+              <figcaption>菜单</figcaption>
+            </figure>
+          </a>
+        </div>
+
+        <div class="head_mid">
+           <a href="starbucks.html" class="maskgo"></a>
+           <img src="img/public/logo.png" alt="" class="logo" />
+        </div>
+        <div class="head_right">
+          <p>星享俱乐部</p>
+          <p><a href="page/login.html">登录</a>或<a href="page/register.html">注册</a></p>
+        </div>
+      </header>
+
+
+
+
+
+
+      <!-- 页中 -->
+      <div class="content">
+         <div class="cont_1">
+           <!-- 首页的轮播图 -->
+           <div class="index_scroll_box">
+             <div class="scroll">
+               <img src="img/index/index_scroll_1.jpg" alt="" />
+               <img src="img/index/index_scroll_2.jpg" alt="" />
+               <img src="img/index/index_scroll_3.jpg" alt="" />
+               <img src="img/index/index_scroll_4.png" alt="" />
+               <img src="img/index/index_scroll_1.jpg" alt="" />
+             </div>
+           </div>
+
+            <!-- control层 -->
+           <div class="pageControl">
+             <span></span>
+             <span></span>
+             <span></span>
+             <span></span>
+           </div>
+
+           <!-- 星巴克新品按钮 -->
+           <a href="page/newProduct/dangjixinpin.html" class="starbucks_newproduct">星巴克新品</a>
+         </div>
+
+         <div class="cont_2">
+            <img src="img/index/wsg-title.png" alt="" />
+            <img src="img/index/wsg-qrcode.png" alt="" />
+            <img src="img/index/wsg-cup.png" alt="" />
+            <img src="img/index/wsg-wording.png" alt="" />
+         </div>
+
+         <div class="cont_3">
+           <div class="cont_3_bg">
+             <div class="cont_3_left">
+               <div class="box">
+                 <p>星享卡</p>
+                 <p>MY STARBUCKS</p>
+                 <p>REWARDS</p>
+               </div>
+             </div>
+             <div class="cont_3_right">
+               <h1>星享俱乐部</h1>
+               <h2>开启您的星享之旅，星星越多，会员等级越高、好礼越丰富</h2>
+               <a href="page/register.html" class="register">注册</a>
+               <a href="page/login.html" class="login">登录</a>
+               <h4 class="more">了解更多>></h4>
+             </div>
+           </div>
+
+         </div>
+
+         <div class="cont_4">
+          <div class="cont_4_left">
+            <a href="https://starbucks.tmall.com/p/rd877191.htm">
+              <img src="img/index/cont_4_bg_1.jpeg" alt="" />
+              <div class="conleftmask">
+                <div class="con4text">
+                  <p>星巴克天猫旗舰店</p>
+                  <h1>爱ta的心意</h1>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="cont_4_right">
+            <a href="page/newProduct/newProduct.html">
+              <img src="img/index/cont_4_bg_2.jpg" alt="" />
+              <div class="conrightmask">
+                <div class="con4text">
+                  <p>生肖迎新春</p>
+                  <h1>点击了解更多</h1>
+                </div>
+              </div>
+            </a>
+          </div>
+         </div>
+
+         <div class="cont_5">
+           <img src="img/index/app-device.png" alt="" />
+           <div class="cont_5_qrcode">
+             <img src="img/index/app-qr.png" alt="" class="app_qr"/>
+             <div class="ios"></div>
+             <div class="andrio"></div>
+             <p class="saoyisao">扫码下载APP</p>
+           </div>
+           <div class="more">
+             <h1>下载全新星巴克中国官方APP，开启更便捷的星巴克体验。</h1>
+             <h4>了解更多>></h4>
+           </div>
+         </div>
+
+         <div class="cont_6">
+           <div class="cont_6_top">
+             <p>星巴克经典</p>
+             <p>咖啡师的最爱</p>
+             <p></p>
+             <p>回溯多年历史，星巴克的技巧纯熟的咖啡师一直用心制作星巴克的经典与饮品。</p>
+           </div>
+
+           <!-- 轮播条全部跳转饮品 -->
+           <a href="page/niceFood/drink.html">
+             <div class="cont_6_bot">
+               <div class="bigbox">
+                 <div class="prebox">
+                   <img src="img/index/cont_6_1.jpg" alt="" />
+                   <h4>手工调制浓缩咖啡</h4>
+                   <p>馥芮白TM</p>
+                 </div>
+                 <div class="prebox">
+                   <img src="img/index/cont_6_2.jpg" alt="" />
+                   <h4>手工调制浓缩咖啡</h4>
+                   <p>焦糖玛奇朵</p>
+                 </div>
+                 <div class="prebox">
+                   <img src="img/index/cont_6_3.jpg" alt="" />
+                   <h4>茶瓦纳TM</h4>
+                   <p>抹茶拿铁</p>
+                 </div>
+                 <div class="prebox">
+                   <img src="img/index/cont_6_4.jpg" alt="" />
+                   <h4>手工调制浓缩咖啡</h4>
+                   <p>浓郁咖啡摩卡</p>
+                 </div>
+                 <div class="prebox">
+                   <img src="img/index/cont_6_5.jpeg" alt="" />
+                   <h4>星冰乐@</h4>
+                   <p>抹茶星冰乐</p>
+                 </div>
+               </div>
+               <div class="bigbox">
+                 <div class="prebox">
+                   <img src="img/index/cont_6_8.jpg" alt="" />
+                   <h4>中度烘焙</h4>
+                   <p>危地马拉安提瓜</p>
+                 </div>
+                 <div class="prebox">
+                   <img src="img/index/cont_6_9.jpg" alt="" />
+                   <h4>深度烘焙</h4>
+                   <p>苏门答腊</p>
+                 </div>
+                 <div class="prebox">
+                   <img src="img/index/cont_6_10.jpg" alt="" />
+                   <h4>手工调制浓缩咖啡</h4>
+                   <p>卡布奇诺（热/冷）</p>
+                 </div>
+                 <div class="prebox">
+                   <img src="img/index/cont_6_11.jpg" alt="" />
+                   <h4>星冰乐@</h4>
+                   <p>摩卡可可碎片星冰乐®</p>
+                 </div>
+                 <div class="prebox">
+                   <img src="img/index/cont_6_12.jpg" alt="" />
+                   <h4>星冰乐@</h4>
+                   <p>芒果西番莲果茶星冰乐®</p>
+                 </div>
+               </div>
+               <!-- 新加的一层障眼法 -->
+               <div class="bigbox">
+                 <div class="prebox">
+                   <img src="img/index/cont_6_1.jpg" alt="" />
+                   <h4>手工调制浓缩咖啡</h4>
+                   <p>馥芮白TM</p>
+                 </div>
+                 <div class="prebox">
+                   <img src="img/index/cont_6_2.jpg" alt="" />
+                   <h4>手工调制浓缩咖啡</h4>
+                   <p>焦糖玛奇朵</p>
+                 </div>
+                 <div class="prebox">
+                   <img src="img/index/cont_6_3.jpg" alt="" />
+                   <h4>茶瓦纳TM</h4>
+                   <p>抹茶拿铁</p>
+                 </div>
+                 <div class="prebox">
+                   <img src="img/index/cont_6_4.jpg" alt="" />
+                   <h4>手工调制浓缩咖啡</h4>
+                   <p>浓郁咖啡摩卡</p>
+                 </div>
+                 <div class="prebox">
+                   <img src="img/index/cont_6_5.jpeg" alt="" />
+                   <h4>星冰乐@</h4>
+                   <p>抹茶星冰乐</p>
+                 </div>
+               </div>
+             </div>
+           </a>
+
+           <div class="con6_pageControl">
+             <span></span>
+             <span></span>
+           </div>
+         </div>
+
+
+
+         <div class="cont_7">
+           <img src="img/index/cont_7.png" alt="" class="cont_7_left"/>
+           <div class="cont_7_right">
+             <h4>我们优质的咖啡产品</h4>
+             <p class="txt">
+               我们持续在全世界各地寻找优质而稀少的咖啡豆，我们喜爱与您分享我们的新发现。我们在星巴克位于总部西雅图的星巴克臻选™咖啡烘焙工坊及品鉴馆为您精心烘焙星巴克臻选™咖啡。
+             </p>
+             <a href="page/TM.html" class="more">了解更多</a>
+             <a href="https://www.starbucks.com.cn/cn/coffeehouse/starbucks-reserve/reserve-stores" class="more">在这里购买</a>
+           </div>
+         </div>
+
+      </div>
+
+
+
+
+
+      <!-- 页尾 -->
+      <footer>
+        <p>© 2017 Starbucks Corporation.</p>
+        <p>All rights reserved. 沪ICP备17003747号 </p>
+        <p>
+          <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402000253"><img src="img/public/icpicon.png"></a>
+          沪公网安备 31010402000253号
+        </p>
+        <div class="wechat">
+          <img src="img/public/wechat.svg" alt=""/>
+          <img src="img/public/wsg-qrcode.png" alt="" class="qr_code"/>
+        </div>
+        <a href="http://www.weibo.com/starbucks?is_hot=1">
+           <img src="img/public/weibo.svg" alt="" class="weibo"/>
+        </a>
+      </footer>
+
+
+
+
+
+    </div>
+  </body>
+</html>

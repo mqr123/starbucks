@@ -1,0 +1,161 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+html{
+  font-size: 10px;
+}
+.wrap{
+  background: white;
+}
+/*内容*/
+.content{
+  width: 1000px;
+  margin: 0 auto;
+}
+/*上部标题*/
+.contTop{
+  width: 500px;
+  margin: 0 auto;
+  padding: 100px;
+  text-align: center;
+}
+.contTop > span{
+  display: block;
+  width: 100%;
+  line-height: 50px;
+  color: rgb(166, 142, 100);
+  font-size: 1.6rem;
+}
+.contTop > p{
+  width: 100%;
+  font-size: 5rem;
+  color: rgb(186, 162, 120);
+  line-height: 100px;
+}
+/*中部联系方式*/
+.contMiddle{
+  width: 1000px;
+}
+.contMiddle dl{
+  width: 700px;
+  margin: 0 auto;
+  padding: 50px 0;
+  font-size: 1.4rem;
+  color: rgb(95, 95, 95);
+  line-height: 30px;
+  border-top: 1px solid rgb(224, 224, 224);
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+.contMiddle dl dt{
+  width: 70px;
+  height: 70px;
+  background: rgb(234, 234, 234);
+  border: 1px solid rgb(234, 234, 234);
+  border-radius: 70px;
+  float: right;
+}
+.contMiddle dl dt:hover{
+  background: rgb(220, 220, 220);
+}
+.contMiddle dl dt img{
+  display: inline-block;
+  margin: 25px 22px;
+}
+.contMiddle dl::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.contMiddle dl dd:nth-child(3){
+  font-size: 1.8rem;
+}
+/*下部时间*/
+ .contBottom{
+   width: 1000px;
+ }
+ .contBottom p{
+   margin: 0 auto;
+   width: 700px;
+   font-size: 1.4rem;
+   color: rgb(125, 125, 125);
+   line-height: 100px;
+ }
+
+
+
+/*云彩背景色*/
+/*@-webkit-keyframes cloudMov{
+  0%{
+    background: rgb(37, 104, 208);
+    color: pink;
+
+  }
+  50%{
+    background: black;
+    color: lightgreen;
+  }
+  100%{
+    background: rgb(37, 104, 208);
+    color: skyblue;
+  }
+}*/
+/*云的动画*/
+@-webkit-keyframes cloud1Mov{
+  /*较快*/
+  /*from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-200%);
+  }*/
+  /*较慢*/
+  0%{
+    left: 0;
+  }
+  100%{
+    left: -200%;
+  }
+}
+
+
+
+ /*云彩效果:用定位加入三张图片
+       每张图片宽度都为100%，叠加在一起，动画用三个背景色转换*/
+  .cloud{
+    margin-top: 100px;
+    width: 100%;
+    height: 480px;
+    background: rgb(37, 104, 208);
+    position: relative;
+    /*隐藏图片超出的200%的宽度*/
+    overflow: hidden;
+    /*animation: cloudMov 50s ease-out infinite;*/
+  }
+  .cloud .cloud1{
+    width: 300%;
+    height: 100%;
+    background: url(../../img/contact/cloud_one.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: cloud1Mov 40s linear infinite;
+  }
+  .cloud .cloud2{
+    width: 300%;
+    height: 100%;
+    background: url(../../img/contact/cloud_two.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: cloud1Mov 60s linear infinite;
+  }
+  .cloud .cloud3{
+    width: 300%;
+    height: 100%;
+    background: url(../../img/cotact/cloud_three.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: cloud1Mov 100s linear infinite;
+  }

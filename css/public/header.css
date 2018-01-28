@@ -1,0 +1,311 @@
+ /*logo动画*/
+ @-webkit-keyframes logoAnimate{
+   0%{
+     transform: rotateY(0deg);
+   }
+   60%{
+     transform: rotateY(0deg);
+   }
+   80%{
+     transform: rotateY(180deg);
+   }
+   100%{
+     transform: rotateY(180deg);
+   }
+ }
+*{
+  padding: 0;
+  margin: 0;
+}
+html{
+  font-size: 10px;
+  /*background: #333;*/
+  text-align: center;
+  min-width: 1000px;
+}
+.wrap{
+  position: relative;
+}
+
+header{
+  width: 100%;
+  height: 100px;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  z-index: 100;
+  box-shadow: 0 5px 100px #ccc;
+}
+header .head_left{
+  width: 100px;
+  height: 100px;
+  /*background: red;*/
+  float: left;
+}
+header .head_left a{
+  text-decoration: none;
+}
+
+
+#window{
+  width: 270px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -270px;
+  z-index: 102;
+  background: rgba(51, 51, 51, 1);
+  transition: all 0.4s ease-in 0s;
+}
+
+#window:target{
+  left: 0;
+}
+.mainMask{
+  width: 100%;
+  height: 1000px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background:rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  display: none;
+}
+.mainMask a{
+  width: 100%;
+  height: 100%;
+  display: block;
+  /*background: cyan;*/
+}
+.mainMask:hover{
+  /*display: block;*/
+  /*background:rgba(255, 0, 0, 0.6);*/
+  /*display: none;*/
+}
+#window:target .mainMask{
+  opacity: 1;
+  display: block;
+}
+.list_other{
+  width: 100%;
+  height: 130px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 105;
+  list-style: none;
+  text-indent: 15px;
+  padding: 15px 0;
+  text-align: left;
+  /*background: gold;*/
+  border-bottom:  1px solid rgb(84, 84, 84);
+}
+.list_other a{
+  font-size: 16px;
+  color: rgb(184, 159, 122);
+  line-height: 45px;
+  text-decoration: none;
+}
+.list_other a:hover{
+  color: white;
+}
+.list_home{
+  width: 100%;
+  height: 510px;
+  position: absolute;
+  top: 160px;
+  left: 0;
+  list-style: none;
+  text-indent: 15px;
+  padding: 15px 0;
+  text-align: left;
+  /*background: pink;*/
+  z-index: 105;
+}
+.list_home li{
+  font-size: 16px;
+  color: white;
+  line-height: 45px;
+  position: relative;
+  /*background: red;*/
+  overflow: hidden;
+}
+.list_home li:hover{
+  color: rgb(184, 159, 122);
+}
+
+.list_home li a img{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.list_home a{
+  font-size: 16px;
+  color: white;
+  line-height: 45px;
+  text-decoration: none;
+}
+.list_home a:hover{
+  color: rgb(184, 159, 122);
+}
+
+
+/*新品推荐2级菜单*/
+.newProductitem{
+  width: 100%;
+  /*background: pink;*/
+  display: none;
+  text-indent: 30px;
+}
+.list_home li:nth-child(2):hover .newProductitem{
+  display: block;
+}
+.newProductitem a{
+  font-size: 14px;
+  display: block;
+  line-height: 40px;
+  color: rgb(170, 170, 170);
+}
+/*咖啡文化2级菜单*/
+.coffeeitem{
+  width: 100%;
+  /*background: pink;*/
+  display: none;
+  text-indent: 30px;
+}
+.list_home li:nth-child(6):hover .coffeeitem{
+  display: block;
+}
+.coffeeitem a{
+  font-size: 14px;
+  display: block;
+  line-height: 40px;
+  color: rgb(170, 170, 170);
+}
+/*饮品美食2级菜单*/
+.nicefooditem{
+  width: 100%;
+  /*background: pink;*/
+  display: none;
+  text-indent: 30px;
+}
+.list_home li:nth-child(7):hover .nicefooditem{
+  display: block;
+}
+.nicefooditem a{
+  font-size: 14px;
+  display: block;
+  line-height: 40px;
+  color: rgb(170, 170, 170);
+}
+/*关于我们2级菜单*/
+.aboutusItem{
+  width: 100%;
+  /*background: pink;*/
+  display: none;
+  text-indent: 30px;
+}
+.list_home li:nth-child(8):hover .aboutusItem{
+  display: block;
+}
+.aboutusItem a{
+  font-size: 14px;
+  display: block;
+  line-height: 40px;
+  color: rgb(170, 170, 170);
+}
+/*帮助中心2级菜单*/
+.helperItem{
+  width: 100%;
+  /*background: pink;*/
+  display: none;
+  text-indent: 30px;
+}
+.list_home li:nth-child(9):hover .helperItem{
+  display: block;
+}
+.helperItem a{
+  font-size: 14px;
+  display: block;
+  line-height: 40px;
+  color: rgb(170, 170, 170);
+}
+
+
+
+
+
+header .head_mid{
+  width: 60px;
+  height: 60px;
+  /*background: blue;*/
+  float: left;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  margin-left: -30px;
+  border-radius: 60px;
+
+}
+
+header .head_right{
+  width: 100px;
+  /*background: purple;*/
+  float: right;
+  padding: 30px 0;
+  padding-right: 20px;
+}
+
+.maskgo{
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  border-radius: 100%;
+  background: url(../../img/public/play.png) center no-repeat;
+  background-size: contain;
+  border: 1px solid #ccc;
+}
+.logo{
+  display: block;
+  width: 100%;
+  height: 100%;
+  /*background: blue;*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 100%;
+  z-index: 11;
+  transition: all 0.55s ease-in-out;
+  transform-origin: top;
+}
+
+header .head_left img{
+  width: 28px;
+  height: 22px;
+  margin-top:35px;
+}
+header .head_left figcaption{
+  color: black;
+}
+header .head_right p{
+  color: rgb(78, 78, 78);
+  font-size: 16px;
+  line-height: 20px;
+}
+header .head_right a{
+  color: rgb(184, 159, 122);
+  font-size: 14px;
+  text-decoration: none;
+}
+.head_right a:nth-child(1){
+  margin-right: 3px;
+}
+.head_right a:nth-child(2){
+  margin-left: 3px;
+}

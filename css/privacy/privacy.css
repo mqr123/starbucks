@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 10px;
+  background: white;
+  min-width: 1200px;
+}
+/*最外层*/
+.wrap{
+  width: 100%;
+  margin: 0 auto;
+}
+/*内容*/
+.content{
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+/*第一块*/
+.step1{
+  text-align: center;
+  padding-top: 100px;
+}
+.step1 span:nth-of-type(1){
+  display: block;
+  width: 1200px;
+  font-size: 1.4rem;
+  color: rgb(166, 142, 100);
+  line-height: 50px;
+}
+.step1 span:nth-of-type(2){
+  display: block;
+  width: 1200px;
+  font-size: 4rem;
+  color: rgb(65, 65, 65);
+}
+.step1 span:nth-of-type(3){
+  display: block;
+  width: 1200px;
+  font-size: 1.8rem;
+  color: rgb(85, 85, 85);
+  line-height: 100px;
+}
+.step1 p{
+  text-align: left;
+  width: 1200px;
+  font-size: 1.7rem;
+  color: rgb(120, 120, 120);
+  line-height: 30px;
+  margin-top: 100px;
+}
+.step1 p a{
+  text-decoration: none;
+  color: rgb(166, 142, 100);
+}
+/*第二块*/
+.step2{
+  margin: 100px auto;
+  text-align: center;
+}
+.step2 h4{
+  text-align: center;
+  width: 1200px;
+  font-size: 2.5rem;
+  color: rgb(65, 65, 65);
+}
+.step2 span{
+  display: inline-block;
+  width: 100px;
+  height: 1px;
+  background: rgb(224, 224, 224);
+  margin: 50px 0;
+}
+.step2 p{
+  width: 1200px;
+  text-align: left;
+  font-size: 1.7rem;
+  line-height: 30px;
+  color: rgb(120, 120, 120);
+  margin-bottom: 20px;
+}
+.step2 p a{
+  text-decoration: none;
+  color: rgb(166, 142, 100);
+}
+/*第三块*/
+.step3 .list ul{
+  font-size: 1.7rem;
+  color: rgb(120, 120, 120);
+  line-height: 30px;
+  text-align: left;
+  margin-left: 34px;
+}
+/*第九块*/
+.step9 > a{
+  display: block;
+  width: 1200px;
+  text-align: left;
+  font-size: 1.7rem;
+  color: rgb(166, 142, 100);
+  text-decoration: none;
+  line-height: 30px;
+}

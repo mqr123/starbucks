@@ -1,0 +1,307 @@
+body{
+  min-width: 1650px;
+}
+  /*网页中最大图片部分内容*/
+  .photo{
+    width: 100%;
+    position: relative;
+    margin-top: 100px;
+  }
+  .photo1{
+    width: 100%;
+  }
+  .photo1 img{
+    width: 100%;
+  }
+  .mask{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .adv{
+    width: 35px;
+    height: 20px;
+    line-height: 20px;
+    background: rgb(71, 71, 74);
+    position: absolute;
+    top: 2%;
+    right: 3%;
+  }
+  .join{
+    color: rgb(178, 159, 92);
+    font-size: 12px;
+    letter-spacing: 4px;
+    position: absolute;
+    top: 36%;
+    left: 48%;
+  }
+  .work{
+    color: white;
+    font-size: 36px;
+    letter-spacing: 4px;
+    position: absolute;
+    top: 40%;
+    left: 42%;
+  }
+  .grow{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 46%;
+    left: 46%;
+  }
+  /*自己加的效果*/
+  .g1{
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    text-align: center;
+    color: white;
+    font-style: italic;
+    background: rgb(38, 231, 144);
+    font-size: 50px;
+    line-height: 80px;
+    position: absolute;
+    top: 70%;
+    left: 20%;
+  }
+  /*hover中，要让它的父级下的子集盒子设置宽高进行定位，
+   并不是给他的照片设置定位，它的照片只需要设置照片样式就好*/
+  .g11{
+    width: 190px;
+    height: 118px;
+    position: absolute;
+    bottom: 100px;
+    right: -70px;
+    display: none;
+  }
+   .g11 img{
+    width: 190px;
+    height: 118px;
+    border-radius: 100px;
+    box-shadow: 0px 0px 5px lightgray;
+  }
+   .g1:hover .g11{
+    display: block;
+  }
+  /*第2部分*/
+  .hand1{
+    left: 30%;
+  }
+  /*第3部分*/
+  .hand2{
+    left: 40%;
+  }
+  /*第4部分*/
+  .hand3{
+    left: 50%;
+  }
+  /*第5部分*/
+  .hand4{
+    left: 60%;
+  }
+  /*第6部分*/
+  .hand5{
+    left: 70%;
+  }
+  /*网页中的内容部分*/
+  .content{
+    color: rgb(119, 112, 112);
+    text-align: center;
+    padding: 80px;
+  }
+  /*第一部分内容*/
+  .content1{
+    width: 60%;
+    margin: 0 auto;
+  }
+  .chance1{
+    position: relative;
+  }
+  .chance1 p:nth-of-type(1){
+    color: rgb(184, 162, 132);
+    font-size: 10px;
+    letter-spacing: 4px;
+  }
+  .chance1 p:nth-of-type(2){
+    color: rgb(82, 82, 82);
+    padding: 15px;
+    font-size: 40px;
+  }
+  .chance2{
+    width: 260px;
+    height: 30px;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    margin-bottom: 50px;
+  }
+  .chance3{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 50px;
+  }
+  /*第二部分内容*/
+  .content2{
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .contentLeft{
+    width: 30%;
+    float: left;
+  }
+  .content2::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .contentRight{
+    width: 59%;
+    float: right;
+    height: 50px;
+    width: 150px;
+    line-height: 50px;
+    text-align: left;
+    border-top: 1px solid rgb(221, 221, 221);
+    color: rgb(163, 163, 165);
+    font-size: 12px;
+    position: absolute;
+    top: 40%;
+    left: 55%;
+  }
+  /*第三部分内容*/
+  .content3{
+    padding: 80px;
+    width: 46%;
+    margin: 0 auto;
+  }
+  .everyday1{
+    font-size: 30px;
+    color: rgb(82, 82, 82);
+    margin-top: 50px;
+  }
+  .everyday2{
+    font-size: 30px;
+    color: rgb(82, 82, 82);
+    margin-top: 8px;
+  }
+  .everyday3{
+    text-align: left;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 40px;
+  }
+  .everyday4 img{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .everyday5{
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  .everyday6{
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  /*第四部分*/
+  .content4{
+    width: 70%;
+    margin: 0 auto;
+    color: rgb(181, 159, 119);
+    font-size: 40px;
+    line-height: 60px;
+    font-style: italic;
+    text-align: left;
+    padding: 60px;
+    border-top: 1px solid rgb(221, 221, 221);
+    border-bottom: 1px solid rgb(221, 221, 221);
+  }
+  /*第五部分内容*/
+  .content5{
+    width: 46%;
+    margin: 0 auto;
+    padding: 60px;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+    color: rgb(129, 129, 129);
+  }
+  /*第六部分内容*/
+  .content6{
+    width: 70%;
+    margin: 0 auto;
+  }
+  .content6::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .Cl{
+    width: 20%;
+    float: left;
+  }
+  .Cr{
+    width: 79%;
+    float: right;
+    position: relative;
+  }
+  .Cr1{
+    width: 150px;
+    height: 20px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    position: absolute;
+    top: 150px;
+    left: 55%;
+  }
+  .Cr2{
+    width: 50%;
+    position: absolute;
+    top: 180px;
+    text-align: left;
+    font-size: 16px;
+    color: rgb(176, 168, 163);
+    line-height: 20px;
+    left: 55%;
+  }
+  /* 网页底部*/
+  footer{
+    width: 100%;
+    height: 130px;
+    background: rgb(41, 41, 41);
+    position: relative;
+  }
+  footer::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .left{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    font-size: 10px;
+    color: rgb(163, 163, 163);
+    float: left;
+  }
+  ul li{
+    margin: 4px;
+    list-style: none;
+  }
+  .right{
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    float: right;
+  }
+  .right img{
+    margin: 20px 10px;
+  }

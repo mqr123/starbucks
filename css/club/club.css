@@ -1,0 +1,554 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 10px;
+  background: white;
+  min-width: 1200px;
+}
+/*内容部分*/
+.content{
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 150px;
+  text-align: left;
+  /*background: lightgreen;*/
+}
+/*第一块：简介*/
+.content > .part1{
+  width: 100%;
+  padding-bottom: 200px;
+}
+.part1 > .part1_1{
+  width: 1200px;
+  margin: 0 auto;
+}
+.part1 > .part1_1::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+/*星星盒子*/
+.part1_1 > .starBox{
+  position: relative;
+}
+ .part1_1 > .starBox img{
+  width: 500px;
+  height: 300px;
+  float: right;
+}
+@-webkit-keyframes move1{
+      0%{
+        transform: rotate(15deg) scale(0) translateY(0px) ;
+      }
+      20%{
+        transform: rotate(15deg) scale(0.3) translateY(-50px) ;
+      }
+      40%{
+        transform: rotate(15deg) scale(0.6) translateY(-100px) ;
+      }
+      60%{
+        transform: rotate(15deg) scale(0.9) translateY(-150px) ;
+      }
+      80%{
+        transform: rotate(15deg) scale(1.2) translateY(-200px) ;
+      }
+      100%{
+        transform: rotate(15deg) scale(1.4) translateY(-250px) ;
+      }
+    }
+    @-webkit-keyframes move2{
+      0%{
+        transform: rotate(-15deg) scale(0) translateY(0px) ;
+      }
+      20%{
+        transform: rotate(-15deg) scale(0.3) translateY(-50px) ;
+      }
+      40%{
+        transform: rotate(-15deg) scale(0.6) translateY(-100px) ;
+      }
+      60%{
+        transform: rotate(-15deg) scale(0.9) translateY(-150px) ;
+      }
+      80%{
+        transform: rotate(-15deg) scale(1.2) translateY(-200px) ;
+      }
+      100%{
+        transform: rotate(-15deg) scale(1.4) translateY(-250px) ;
+      }
+    }
+    @-webkit-keyframes move3{
+      0%{
+        transform: rotate(-30deg) scale(0) translateY(0px) ;
+      }
+      20%{
+        transform: rotate(-30deg) scale(0.3) translateY(-50px) ;
+      }
+      40%{
+        transform: rotate(-30deg) scale(0.6) translateY(-100px) ;
+      }
+      60%{
+        transform: rotate(-30deg) scale(0.9) translateY(-150px) ;
+      }
+      80%{
+        transform: rotate(-30deg) scale(1.2) translateY(-200px) ;
+      }
+      100%{
+        transform: rotate(-30deg) scale(1.4) translateY(-250px) ;
+      }
+    }
+    @-webkit-keyframes move4{
+      0%{
+        transform: rotate(30deg) scale(0) translateY(0px) ;
+      }
+      20%{
+        transform: rotate(30deg) scale(0.3) translateY(-50px) ;
+      }
+      40%{
+        transform: rotate(30deg) scale(0.6) translateY(-100px) ;
+      }
+      60%{
+        transform: rotate(30deg) scale(0.9) translateY(-150px) ;
+      }
+      80%{
+        transform: rotate(30deg) scale(1.2) translateY(-200px) ;
+      }
+      100%{
+        transform: rotate(30deg) scale(1.4) translateY(-250px) ;
+      }
+    }
+    @-webkit-keyframes move5{
+      0%{
+        transform: scale(0) translateY(0px) ;
+      }
+      20%{
+        transform: scale(0.3) translateY(-50px) ;
+      }
+      40%{
+        transform: scale(0.6) translateY(-100px) ;
+      }
+      60%{
+        transform: scale(0.9) translateY(-150px)  ;
+      }
+      80%{
+        transform: scale(1.2) translateY(-200px)  ;
+      }
+      100%{
+        transform: scale(1.4) translateY(-250px)  ;
+      }
+    }
+    @-webkit-keyframes move6{
+      0%{
+        transform: rotate(10deg) scale(0) translateY(0px) ;
+      }
+      20%{
+        transform: rotate(10deg) scale(0.3) translateY(-50px) ;
+      }
+      40%{
+        transform: rotate(10deg) scale(0.6) translateY(-100px) ;
+      }
+      60%{
+        transform: rotate(10deg) scale(0.9) translateY(-150px) ;
+      }
+      80%{
+        transform: rotate(10deg) scale(1.2) translateY(-200px) ;
+      }
+      100%{
+        transform: rotate(10deg) scale(1.4) translateY(-250px) ;
+      }
+    }
+    @-webkit-keyframes move7{
+      0%{
+        transform: rotate(-10deg) scale(0) translateY(0px) ;
+      }
+      20%{
+        transform: rotate(-10deg) scale(0.3) translateY(-50px) ;
+      }
+      40%{
+        transform: rotate(-10deg) scale(0.6) translateY(-100px) ;
+      }
+      60%{
+        transform: rotate(-10deg) scale(0.9) translateY(-150px) ;
+      }
+      80%{
+        transform: rotate(-10deg) scale(1.2) translateY(-200px) ;
+      }
+      100%{
+        transform: rotate(-10deg) scale(1.4) translateY(-250px) ;
+      }
+    }
+    @-webkit-keyframes move8{
+      0%{
+        transform: rotate(-35deg) scale(0) translateY(0px) ;
+      }
+      20%{
+        transform: rotate(-35deg) scale(0.3) translateY(-50px) ;
+      }
+      40%{
+        transform: rotate(-35deg) scale(0.6) translateY(-100px) ;
+      }
+      60%{
+        transform: rotate(-35deg) scale(0.9) translateY(-150px) ;
+      }
+      80%{
+        transform: rotate(-35deg) scale(1.2) translateY(-200px) ;
+      }
+      100%{
+        transform: rotate(-35deg) scale(1.4) translateY(-250px) ;
+      }
+    }
+    @-webkit-keyframes move9{
+      0%{
+        transform: rotate(35deg) scale(0) translateY(0px) ;
+      }
+      20%{
+        transform: rotate(35deg) scale(0.3) translateY(-50px) ;
+      }
+      40%{
+        transform: rotate(35deg) scale(0.6) translateY(-100px) ;
+      }
+      60%{
+        transform: rotate(35deg) scale(0.9) translateY(-150px) ;
+      }
+      80%{
+        transform: rotate(35deg) scale(1.2) translateY(-200px) ;
+      }
+      100%{
+        transform: rotate(35deg) scale(1.4) translateY(-250px) ;
+      }
+    }
+      .starBox > span:nth-child(2n+1){
+        display: block;
+        width: 50px;
+        height: 50px;
+        background: url(../../img/club/star1.png) no-repeat;
+        position: absolute;
+        top: 180px;
+        left: 805px;
+      }
+      .starBox > span:nth-child(2n){
+        display: block;
+        width: 50px;
+        height: 50px;
+        background: url(../../img/club/star2.png) no-repeat;
+        position: absolute;
+        top: 180px;
+        left: 805px;
+      }
+      .starBox > span:nth-child(1){
+        animation: move1 2s linear forwards;
+      }
+      .starBox > span:nth-child(2){
+        animation: move2 4s linear forwards;
+      }
+      .starBox > span:nth-child(3){
+        animation: move3 6.5s linear forwards;
+      }
+      .starBox > span:nth-child(4){
+        animation: move4 6s linear forwards;
+      }
+      .starBox > span:nth-child(5){
+        animation: move5 7s linear forwards;
+      }
+      .starBox > span:nth-child(6){
+        animation: move6 5s linear forwards;
+      }
+      .starBox > span:nth-child(7){
+        animation: move7 5.5s linear forwards;
+      }
+      .starBox > span:nth-child(8){
+        animation: move8 5s linear forwards;
+      }
+      .starBox > span:nth-child(9){
+        animation: move9 3s linear forwards;
+      }
+
+
+
+.part1_1 > span{
+  width: 550px;
+  font-size: 1.4rem;
+  color: rgb(170, 142, 100);
+  line-height: 100px;
+}
+/*第一块的黑色字体*/
+.part1 .text1{
+  width: 550px;
+  font-size: 2rem;
+  line-height: 40px;
+  color: rgb(75, 75, 75);
+}
+/*第一块的条款和条件*/
+.part1 .text2{
+  margin-top: 20px;
+  width: 550px;
+  font-size: 1.6rem;
+  color: rgb(150, 150, 150);
+  line-height: 30px;
+}
+.part1 .text2 a{
+  text-decoration: none;
+  color: rgb(170, 142, 100);
+}
+/*第二块：登录或注册*/
+ .content > .part2{
+   text-align: left;
+   width: 100%;
+   background: rgba(0, 0, 0, 0.7);
+ }
+ .content > .part2::after{
+   content: "";
+   display: block;
+   clear: both;
+ }
+ /*第二块左侧创建账户*/
+ .part2 > .part2_1{
+   width: 30%;
+   padding: 50px 10%;
+   background: rgb(166, 142, 100);
+   float: left;
+   height: 234px;
+ }
+ .part2_1 span{
+   display: block;
+   font-size: 3rem;
+   color: rgb(65, 65, 65);
+ }
+ .part2_1 p{
+   color: white;
+   font-size: 1.6rem;
+   line-height: 30px;
+   margin: 50px 0;
+ }
+ .part2_1 a{
+   font-size: 1.4rem;
+   text-decoration: none;
+   color: rgb(65, 65, 65);
+   border: 2px solid rgb(65, 65, 65);
+   padding: 15px 20px;
+ }
+ .part2_1 a:hover{
+   color: white;
+   background: rgb(65, 65, 65);
+ }
+/*第二块右侧登录*/
+ .part2 > .part2_2{
+   background: rgb(65, 65, 65);
+   height: 234px;
+ }
+ .part2_2 span{
+   color: rgb(166, 142, 100);
+ }
+ .part2_2 a{
+   border-color: rgb(166, 142, 100);
+   color: rgb(166, 142, 100);
+ }
+ .part2_2 a:hover{
+   background: rgb(166, 142, 100);
+ }
+ /*第三块：会员等级*/
+ .content > .part3{
+   width: 100%;
+   padding: 100px 0px;
+   padding-bottom: 0px;
+ }
+/*顶部提示*/
+.part3 > .point{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.part3 > .point  p{
+  width: 100px;
+  margin: 0 auto;
+  padding: 30px 0;
+  font-size: 2.2rem;
+  color: rgb(69, 69, 69);
+  border-bottom: 1px solid rgb(213, 213, 213);
+}
+/*等级一：银星*/
+.part3 > .grade_1{
+  width: 100%;
+  margin: 50px auto;
+  color: rgb(69, 69, 69);
+  text-align: center;
+}
+.grade_1 > span{
+  display: block;
+  width: 100%;
+  font-size: 3rem;
+  line-height: 100px;
+}
+.grade_1 > p{
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+
+
+
+/*3d图片*/
+.picBox{
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.picBox .pic{
+  display: inline-block;
+  /*开启3d视图*/
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  /*观察者距离*/
+  -webkit-perspective: 500px;
+  perspective: 500px;
+  width: 180px;
+  margin-right: 40px;
+}
+/*装正反面的盒子*/
+.container{
+  width: 180px;
+  height: 132px;
+  /*开启3d视图*/
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  /* 过渡时间*/
+  transition: all 1.5s;
+}
+.pic:hover .container{
+  transform: rotateY(180deg);
+}
+.face{
+  /*隐藏被旋转元素的背面：*/
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 150px;
+}
+/*正面*/
+.front{
+  width: 180px;
+  height: 132px;
+}
+/*背面*/
+.back{
+  width: 180px;
+  height: 132px;
+  transform: rotateY(180deg);
+  background: rgb(224, 224, 224);
+  background: linear-gradient(to top,  rgba(24, 82, 48, 0.1) , rgba(24, 82, 48, 0.3) );
+}
+.back h4{
+  margin: 30px auto;
+  width: 150px;
+  font-size: 1.4rem;
+  color: rgb(85, 85, 85);
+}
+
+
+
+
+
+
+
+/*等级二：玉星*/
+.part3 .grade_2 > span{
+  color: rgb(28, 103, 53);
+}
+.grade_2 .pic{
+  justify-content: space-around;
+}
+.grade_2 .pic figure img:hover{
+  transform: rotate(360deg);
+}
+/*等级三：金星*/
+.grade_3{
+  color: rgb(157, 126, 79);
+  height: 500px;
+}
+
+/*第四块：APP下载*/
+.part4{
+  text-align: left;
+  width: 100%;
+  height: 450px;
+  background: url(../../img/club/part4_1.jpg) 0px -250px no-repeat;
+  background-size: cover;
+}
+.part4 > .text1{
+  color: white;
+  font-size: 3rem;
+  margin-left: 10%;
+  padding-top: 80px;
+  width: 400px;
+  line-height: 40px;
+}
+.part4 > .text2{
+  width: 400px;
+  color: white;
+  font-size: 1.6rem;
+  margin: 30px 0;
+  margin-left: 10%;
+  line-height: 30px;
+}
+.part4 > a:nth-of-type(1){
+  margin-left: 10%;
+}
+/*第五块：常见问题*/
+/*顶部提示*/
+.part5{
+  background: rgb(235, 235, 235);
+  padding: 50px 0;
+}
+.part5 > .point{
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.part5 > .point  p{
+  width: 100px;
+  margin: 0 auto;
+  padding: 30px 0;
+  font-size: 2.2rem;
+  color: rgb(69, 69, 69);
+  border-bottom: 1px solid rgb(213, 213, 213);
+}
+/*中部问题*/
+.part5 > .question{
+  text-align: left;
+  width: 1000px;
+  margin: 30px auto;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 100px;
+}
+.part5  .question h4{
+  font-size: 1.8rem;
+  margin: 30px 0;
+}
+.part5  .question p{
+  font-size: 1.6rem;
+  color: rgb(93, 93, 93);
+  line-height: 25px;
+}
+.part5  .question p a{
+  text-decoration: none;
+  color: rgb(174, 148, 103);
+}
+/*下部查看按钮*/
+.part5 > .look{
+  width: 100%;
+  padding: 100px 0;
+  text-align: center;
+}
+.part5 .look a{
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: rgb(174, 148, 103);
+  padding: 15px 30px;
+  border: 2px solid rgb(174, 148, 103);
+}
+.part5 .look a:hover{
+  color: white;
+  background: rgb(174, 148, 103);
+}

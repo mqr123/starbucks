@@ -1,0 +1,295 @@
+ body{
+   min-width: 1150px;
+ }
+  /* 自己加的视频效果*/
+  .me{
+    width: 100%
+    padding: 100px;
+    background: rgb(221, 221, 221);
+    margin-top: 100px;
+  }
+  .me1{
+    width: 60%;
+    margin: 0 auto;
+  }
+  .me1 video{
+    width: 100%;
+  }
+  /*第一部分*/
+  /*图片如何随着浏览器的缩放进行缩放？*/
+  .photo{
+    background: url(../img/history/photo.jpeg) center center no-repeat;
+    height: 350px;
+    background-size: cover;
+  }
+
+  /*第二部分左边*/
+  .number{
+    height: 320px;
+    background: rgb(238, 238, 238);
+    padding: 100px;
+  }
+  .number1{
+    width: 80%;
+    margin: 0 auto;
+  }
+  /*左中右部分的内容*/
+  .Nleft{
+    width: 30%;
+    /*height: 170px;*/
+    float: left;
+    background: rgb(238, 238, 238);
+  }
+  .Nlefttop{
+    width:100%;
+    height: 170px;
+    background: white;
+    text-align: center;
+    position: relative;
+  }
+  h1{
+    width: 100%;
+    font-size: 40px;
+    position: absolute;
+    font-weight: 400;
+    top: 40px;
+    left: 0;
+  }
+  .N2{
+    font-size: 12px;
+    color: rgb(197, 159, 119);
+    letter-spacing: 1px;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+  }
+  .N3{
+    font-size: 40px;
+    letter-spacing: 1px;
+    color: rgb(82, 82, 82);
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+  }
+  .Nmiddle{
+    width: 30%;
+    /*height: 170px;*/
+    float: left;
+    margin-left: 5%;
+    background: rgb(238, 238, 238);
+  }
+  .Nright{
+    width: 30%;
+    /*height: 170px;*/
+    float: right;
+    background: rgb(238, 238, 238);
+  }
+  .Nleftbottom{
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+    color: rgb(112, 112, 112);
+  }
+  /*第三部分*/
+  .world{
+    padding-top: 200px;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .world1{
+    width: 20%;
+    margin: 0 auto;
+    color: rgb(82, 82, 82);
+    font-size: 20px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    padding-bottom: 20px;
+    position: relative;
+  }
+  .world1_1{
+    position: absolute;
+    top: -150px;
+    left: -50px;
+    display: none;
+  }
+  .world1 img{
+    width: 190px;
+    height: 120px;
+    border-radius: 120px;
+  }
+  .world1:hover .world1_1{
+    display: inline-block;
+  }
+  /*文字的滚动效果*/
+  .animation{
+    width: 65%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid gray;
+  }
+  .mask{
+    width: 100%;
+    height: 50px;
+    /*border: 1px solid gray;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .world2{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align:left;
+    text-indent: 36px;
+    color: rgb(138, 138, 138);
+    font-size: 18px;
+  }
+  .world2 p{
+    animation: world2Mov 15s linear infinite;
+  }
+  /*第一行文字的效果*/
+  @-webkit-keyframes world2Mov{
+    /*第一行*/
+    0%{
+      transform: translateY(0px);
+    }
+    15%{
+      transform: translateY(0px);
+    }
+      /*第2行*/
+    20%{
+      transform: translateY(-50px);
+    }
+    35%{
+      transform: translateY(-50px);
+    }
+      /*第3行*/
+    40%{
+      transform: translateY(-100px);
+    }
+    55%{
+      transform: translateY(-100px);
+    }
+      /*第4行*/
+    60%{
+      transform: translateY(-150px);
+    }
+    75%{
+      transform: translateY(-150px);
+    }
+      /*第5行*/
+    80%{
+      transform: translateY(-200px);
+    }
+    95%{
+      transform: translateY(-200px);
+    }
+    /*第1行*/
+    100%{
+      transform: translateY(-250px);
+    }
+  }
+  /*第四部分*/
+  .big{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 100px;
+    position: relative;
+  }
+  .big1{
+    width: 32%;
+    margin: 0 auto;
+    color: rgb(82, 82, 82);
+    font-size: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+  }
+  .big2{
+    width: 100%;
+    margin: 0 auto;
+    font-size: 18px;
+    margin-top: 40px;
+    color: rgb(116, 116, 116);
+    line-height: 26px;
+    text-align: left;
+  }
+  .big2 p{
+    padding: 10px;
+  }
+  /* 第五部分*/
+  .wards{
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 100px;
+  }
+  .xing1{
+    width: 60%;
+    margin: 0 auto;
+    font-size: 30px;
+    color: rgb(116, 116, 116);
+    position: absolute;
+    top: 50px;
+    left: 30%;
+  }
+  /*方框*/
+  /*.wards1{
+    width: 100%;
+    height: 50px;
+    border: 1px solid green;
+    position: absolute;
+    top: 150px;
+    left: 0%;
+    overflow: hidden;
+  }*/
+  .wards2{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    /*text-indent: 36px;*/
+    color: rgb(116, 116, 116);
+    position: absolute;
+    top: 200px;
+    left: 0%;
+    text-align: left;
+  }
+  /* 网页底部*/
+  footer{
+    width: 100%;
+    height: 130px;
+    background: rgb(41, 41, 41);
+    position: relative;
+    margin-top: 900px;
+  }
+  footer::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .left{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    font-size: 10px;
+    color: rgb(163, 163, 163);
+    float: left;
+  }
+  ul li{
+    margin: 4px;
+    list-style: none;
+  }
+  .right{
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    float: right;
+  }
+  .right img{
+    margin: 20px 10px;
+  }

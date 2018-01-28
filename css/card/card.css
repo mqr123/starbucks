@@ -1,0 +1,340 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 10px;
+  min-width: 1200px;
+}
+/*图片动画*/
+@-webkit-keyframes imgMove{
+  0%{
+    transform-origin: 125px 0px;
+    transform: rotate(0deg);
+  }
+  30%{
+    transform-origin: 125px 0px;
+    transform: rotate(30deg);
+  }
+  50%{
+    transform-origin: 125px 0px;
+    transform: rotate(0deg);
+  }
+  80%{
+    transform-origin: 125px 0px;
+    transform: rotate(-30deg);
+  }
+  100%{
+    transform-origin: 125px 0px;
+    transform: rotate(0deg);
+  }
+}
+/*最外层*/
+.wrap{
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 100px;
+  background: white;
+}
+/*页中*/
+/*上部背景*/
+.content > .top{
+  width: 100%;
+  background: rgb(224, 224, 224);
+  background: url(../../img/card/banner.jpeg);
+}
+.top_1{
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.top_1::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.top_1 > img{
+  width: 250px;
+  height: 250px;
+  margin-left: 100px;
+  margin-right: 250px;
+  float: left;
+  animation: imgMove 3s linear infinite;
+}
+.top_1 > h3{
+  padding: 50px 0px;
+  font-size: 4rem;
+  color: rgb(83, 83, 83);
+}
+.top_1 > p{
+  line-height: 30px;
+  font-size: 1.8rem;
+  color: rgb(83, 83, 83);
+}
+.top_1 >a{
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.8rem;
+  padding: 10px 30px;
+  color: rgb(24, 83, 48);
+  border: 2px solid rgb(24, 83, 48);
+  border-radius: 10px;
+  margin: 50px 0;
+}
+.top_1 > a:hover{
+  background: rgb(24, 83, 48);
+  color: white;
+}
+/*第一块*/
+.step1{
+  width: 1200px;
+  margin: 0 auto;
+}
+.step1::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+/*左边*/
+.step1_left{
+  width: 500px;
+  float: left;
+  margin-top: 100px;
+  text-align: left;
+}
+.step1_left span{
+  display: block;
+  font-size: 1.4rem;
+  color: rgb(166, 142, 100);
+  line-height: 50px;
+}
+.step1_left h3{
+  font-size: 4rem;
+  color: rgb(65, 65, 65);
+}
+.step1_left p{
+  font-size: 2rem;
+  color: rgb(85, 85, 85);
+  line-height: 30px;
+  margin-top: 50px;
+}
+/*右边*/
+.step1_right{
+  width: 500px;
+  float: right;
+}
+.step1_right img{
+  width: 500px;
+  height: 550px;
+}
+/*第二小块*/
+.step2{
+  width: 1200px;
+  margin: 50px auto;
+}
+.step2 a{
+  font-size: 1.6rem;
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(166, 142, 100);
+  padding: 10px 20px;
+  border: 2px solid rgb(166, 142, 100);
+}
+.step2 a:hover{
+  color: white;
+  background: rgb(166, 142, 100);
+}
+/*第三块*/
+ .step3{
+   width: 100%;
+   text-align: left;
+   background: rgba(0, 0, 0, 0.7);
+   margin: 100px auto;
+ }
+ .step3::after{
+   content: "";
+   display: block;
+   clear: both;
+ }
+ /*左侧*/
+ .step3 > .step3_left{
+   width: 30%;
+   padding: 50px 10%;
+   background: rgb(166, 142, 100);
+   float: left;
+   height: 234px;
+ }
+ .step3_left span{
+   width: 400px;
+   display: block;
+   font-size: 3rem;
+   color: rgb(65, 65, 65);
+ }
+ .step3_left p{
+   width: 350px;
+   color: white;
+   font-size: 1.6rem;
+   line-height: 30px;
+   margin: 50px 0;
+ }
+ .step3_left a{
+   display: inline-block;
+   font-size: 1.4rem;
+   text-decoration: none;
+   color: rgb(65, 65, 65);
+   border: 2px solid rgb(65, 65, 65);
+   padding: 15px 20px;
+ }
+ .step3_left a:hover{
+   color: white;
+   background: rgb(65, 65, 65);
+ }
+/*右侧*/
+  .step3 > .step3_right{
+   background: rgb(65, 65, 65);
+   height: 234px;
+ }
+ .step3_right span{
+   color: rgb(166, 142, 100);
+ }
+ .step3_right .link{
+   width: 300px;
+ }
+ .step3_right .link  a{
+   border-color: rgb(166, 142, 100);
+   color: rgb(166, 142, 100);
+ }
+ .step3_right .link a:nth-of-type(1){
+   margin-right: 10px;
+   width: 84px;
+ }
+ .step3_right .link a:nth-of-type(2){
+   width: 112px;
+ }
+ .step3_right .link a:hover{
+   color: white;
+   background: rgb(166, 142, 100);
+ }
+ /*第四块*/
+ /*第四块上部提示*/
+.step4_top{
+   font-size: 3rem;
+   text-align: center;
+   color: rgb(65, 65, 65);
+   margin-top: 200px;
+   margin-bottom: 100px;
+ }
+ /*第四块上部图片信息*/
+ .step4{
+   width: 1200px;
+   margin: 0 auto;
+   display: flex;
+   flex-flow: wrap;
+   justify-content: space-around;
+ }
+ .step4_1{
+   width: 350px;
+ }
+ .step4_1 img{
+   width: 350px;
+   /*height: 330px;*/
+   -webkit-box-reflect:below 10px -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 100%);
+
+ }
+ .step4_1 span{
+   margin-top: 100px;
+   display: block;
+   font-size: 2.5rem;
+   color: rgb(65, 65, 65);
+   text-align: center;
+   line-height: 100px;
+ }
+ .step4_1 p{
+   font-size: 1.8rem;
+   color: rgb(85, 85, 85);
+   text-align: center;
+   line-height: 30px;
+ }
+ /*第四块底部面额文字*/
+ .step4_bottom{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(166, 142, 100);
+    margin: 100px 0;
+  }
+  /*第五块*/
+  .step5{
+    width: 100%;
+    margin: 100px auto;
+    border-top: 1px solid rgb(224, 224, 224);
+    border-bottom: 1px solid rgb(224, 224, 224);
+    text-align: center;
+  }
+  .step5 h4{
+    width: 600px;
+    font-size: 3rem;
+    font-weight: normal;
+    margin: 50px auto;
+  }
+  .step5 p{
+    width: 600px;
+    font-size: 1.8rem;
+    color: rgb(86, 86, 86);
+    line-height: 30px;
+    margin: 0 auto;
+  }
+  /*.step5 a{
+    display: inline-block;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: rgb(166, 142, 100);
+    padding: 10px 20px;
+    border: 2px solid rgb(166, 142, 100);
+    margin: 50px auto;
+  }
+  .step5 a:hover{
+    color: white;
+    background: rgb(166, 142, 100);
+  }*/
+  /*按钮*/
+  .flower{
+    display: inline-block;
+    margin: 30px 0;
+  }
+  .flower span , .flower a{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: rgb(186, 162, 120);
+    border-radius: 100px;
+  }
+  .step5 span:nth-of-type(1){
+    transform: rotate(120deg);
+  }
+  .step5 span:nth-of-type(2){
+    transform: rotate(90deg);
+  }
+  .step5 span:nth-of-type(3){
+    transform: rotate(60deg);
+  }
+  .step5 span:nth-of-type(4){
+    transform: rotate(30deg);
+  }
+  .step5 a{
+    transform: rotate(-120deg);
+    line-height: 100px;
+    color: black;
+    text-decoration: none;
+    font-size: 1.4rem;
+  }
+  .flower:hover span{
+    border-radius: 10px;
+    transition: all 0.5s;
+  }
+  .flower:hover a{
+    color: white;
+    font-size: 1.6rem;
+    text-shadow: 0px 0px 10px white;
+  }

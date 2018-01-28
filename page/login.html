@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>登录.星享俱乐部.星巴克</title>
+    <link rel="icon" href="../img/public/favicon.ico">
+    <link rel="stylesheet" href="../css/public/header.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="../css/public/footer.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="../css/login/login.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <!-- 最外层 -->
+    <div class="wrap">
+      <!-- 侧栏 -->
+      <!-- 利用target锚点跳转方式实现侧拉 -->
+      <div id="window">
+        <div class="mainMask"><a href="#"></a></div>
+
+         <ul class="list_other">
+           <li><a href="https://www.starbucks.com.cn/en">English</a></li>
+           <li><a href="http://www.starbucks.com.cn/cn/stores">星巴克门店</a></li>
+           <li><a href="https://starbucks.tmall.com/">天猫旗舰店</a></li>
+         </ul>
+         <ul class="list_home">
+           <li><a href="../index.html">首页</a></li>
+           <li>
+             <a href="#">
+               新品推荐
+               <img src="../img/public/menu_icon_right.png" alt="" />
+             </a>
+             <div class="newProductitem">
+                <a href="../page/newProduct/newProduct.html">新年送出新心意</a>
+                <a href="../page/newProduct/huanXinShi.html">星巴克焕新食</a>
+                <a href="../page/newProduct/dangjixinpin.html">当季新品</a>
+             </div>
+
+           </li>
+           <li><a href="../page/club.html">星享俱乐部</a></li>
+           <li><a href="../page/app.html">星巴克移动应用</a></li>
+           <li><a href="../page/card.html">星礼卡</a></li>
+           <li>
+             <a href="#">
+               咖啡文化
+               <img src="../img/public/menu_icon_right.png" alt="" />
+             </a>
+             <div class="coffeeitem">
+                <a href="../page/coffeeHistory.html">咖啡文化</a>
+                <a href="../page/TM.html">星巴克臻选™咖啡</a>
+                <a href=".../page/how.html">如何冲泡咖啡</a>
+             </div>
+           </li>
+           <li>
+             <a href="#">
+               饮品美食
+               <img src="../img/public/menu_icon_right.png" alt="" />
+             </a>
+             <div class="nicefooditem">
+                <a href="../page/niceFood/drink.html">饮品</a>
+                <a href="../page/niceFood/starbucksFood.html">星巴克美食</a>
+                <a href="../page/niceFood/starbucksCoffee.html">星巴克咖啡</a>
+                <a href="../page/niceFood/starbucksVIA.html">星巴克VIA® 免煮咖啡</a>
+                <a href="../page/niceFood/teavana.html">茶瓦纳™</a>
+             </div>
+           </li>
+           <li>
+             <a href="#">
+               关于我们
+               <img src="../img/public/menu_icon_right.png" alt="" />
+             </a>
+             <div class="aboutusItem">
+                <a href="../page/news.html">企业新闻</a>
+                <a href="../page/values.html">我们的使命和价值观</a>
+                <a href="../page/duty.html">星巴克责任</a>
+                <a href="../page/china.html">工作在星巴克中国</a>
+                <a href="../page/join.html">加入星巴克</a>
+                <a href="../page/chinain.html">星巴克在中国</a>
+                <a href="../page/history.html">历史回顾</a>
+             </div>
+           </li>
+           <li>
+             <a href="#">
+               帮助中心
+               <img src="../img/public/menu_icon_right.png" alt="" />
+             </a>
+             <div class="helperItem">
+                <a href="../page/question/question1.html">常见问题</a>
+                <a href="../page/contact.html">联系我们</a>
+                <a href="../page/terms.html">使用条款</a>
+                <a href="../page/privacy.html">隐私权政策</a>
+             </div>
+           </li>
+         </ul>
+      </div>
+
+
+
+      <!-- 页头 -->
+      <header>
+        <div class="head_left">
+          <a href="#window" target="_parent">
+            <figure>
+              <img src="../img/public/menu_icon.png" alt="" />
+              <figcaption>菜单</figcaption>
+            </figure>
+          </a>
+        </div>
+
+        <div class="head_mid">
+           <a href="../index.html"><img src="../img/public/logo.png" alt="" class="logo" /></a>
+        </div>
+        <div class="head_right">
+          <p>星享俱乐部</p>
+          <p><a href="../page/login.html">登录</a>或<a href="../page/register.html">注册</a></p>
+        </div>
+      </header>
+
+
+      <div class="content">
+        <!-- 登录提示 -->
+        <div class="point">
+          <h3>登录星享俱乐部</h3>
+          <span></span>
+          <p>用您的用户名和密码登录</p>
+        </div>
+        <!-- 登录内容 -->
+        <div class="write">
+
+
+
+          <div class="box">
+            <div class="login">
+
+             <img src="../img/login/head.png" alt=""  class="head"/>
+             <img src="../img/login/nose.png" alt=""  class="nose"/>
+
+             <img src="../img/login/prehand.png" alt="" class="prehand1"/>
+             <img src="../img/login/prehand.png" alt="" class="prehand2"/>
+
+             <img src="../img/login/lefthand.png" alt="" class="lefthand"/>
+             <img src="../img/login/righthand.png" alt="" class="righthand"/>
+
+              <div class="mask">
+                用户名或电子邮箱 <br>
+                <input type="text" name="name" value="">
+                密码 <br>
+                <input type="password" name="name" value="">
+                <!-- 密码是否可见 -->
+                <div class="see">
+                  <input type="checkBox" name="" value="">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+          <!-- 自动登录单选框 -->
+          <div class="radioSet">
+            <input type="checkBox" name="login" value="">
+            <span></span>
+            下次自动登录
+          </div>
+          <!-- 验证码 -->
+          <div class="captcha">
+            验证码
+            <p>
+              请选择图案：裤子
+            </p>
+            <img src="../img/login/captcha.png" alt="" />
+            <span></span>
+          </div>
+          <!-- 登录按钮 -->
+          <span>登录</span>
+          <p>
+            <a href="#">忘记密码？</a>
+          </p>
+          <!-- 分界线OR  -->
+          <div class="boundary">
+            <span>OR</span>
+          </div>
+          <!-- 创建按钮 -->
+          <span>
+            <a href="register.html">创建星享俱乐部账户</a>
+          </span>
+          <p class="about">
+            还没有星享俱乐部账户？请在购买星享卡后注册<a href="club.html">星享俱乐部</a>账户。
+            <br>您可以至附近的<a href="http://starbucks.tmall.com">星巴克门店</a>或前往<a href="http://starbucks.tmall.com">星巴克天猫官方旗舰店<a href="http://starbucks.tmall.com">starbucks
+              .tmall.com</a>购买星享卡。
+          </p>
+        </div>
+      </div>
+
+
+
+      <!-- 页尾 -->
+      <footer>
+        <p>© 2017 Starbucks Corporation.</p>
+        <p>All rights reserved. 沪ICP备17003747号 </p>
+        <p>
+          <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402000253"><img src="../img/public/icpicon.png"></a>
+          沪公网安备 31010402000253号
+        </p>
+        <div class="wechat">
+          <img src="../img/public/wechat.svg" alt=""/>
+          <img src="../img/public/wsg-qrcode.png" alt="" class="qr_code"/>
+        </div>
+        <a href="http://www.weibo.com/starbucks?is_hot=1">
+           <img src="../img/public/weibo.svg" alt="" class="weibo"/>
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>

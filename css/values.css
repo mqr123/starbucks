@@ -1,0 +1,126 @@
+
+  /*网页中最大照片的部分内容*/
+  .photo{
+    width: 100%;
+    position: relative;
+    margin-top: 100px;
+  }
+  .photo1{
+    width: 100%;
+    height: 840px;
+  }
+  .photo1 img{
+    width: 100%;
+    height: 90%;
+  }
+  /*遮罩效果*/
+  .mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .us{
+    position: absolute;
+    top: 30%;
+    right: 47%;
+    font-size: 13px;
+    line-height: 20px;
+    color: rgb(181, 159, 119);
+  }
+  .set{
+    position: absolute;
+    top: 34%;
+    left: 40%;
+    color: white;
+    font-size: 40px;
+  }
+  .everyone{
+    position: absolute;
+    top: 41%;
+    left: 38%;
+    color: white;
+    font-size: 40px;
+  }
+  /*网页中的内容部分*/
+  .values{
+    width: 100%;
+  }
+  .values1{
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    color: rgb(120, 120, 120);
+  }
+  .v1{
+    position: absolute;
+    top: 0;
+    left: 5%;
+    font-size: 25px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+  }
+  .v2{
+    position: absolute;
+    top: 130px;
+    left: 5%;
+    margin-bottom: 50px;
+  }
+  .v3{
+    font-size: 20px;
+  }
+  .v2 ul li{
+    font-size: 18px;
+    margin-left: 40px;
+    margin-top: 20px;
+    text-align: left;
+  }
+  .people{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 400px;
+    border-top: 1px solid rgb(221, 221, 221);
+    margin-bottom: 400;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    color: rgb(181, 159, 119);
+    font-size: 40px;
+    height: 165px;
+    line-height: 165px;
+    font-style: italic;
+  }
+  /* 网页底部*/
+  footer{
+    width: 100%;
+    height: 130px;
+    background: rgb(41, 41, 41);
+    position: relative;
+    margin-top: 130px;
+  }
+  footer::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .left{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    font-size: 10px;
+    color: rgb(163, 163, 163);
+    float: left;
+  }
+  footer ul li{
+    margin: 4px;
+    list-style: none;
+  }
+  .right{
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    float: right;
+  }
+  .right img{
+    margin: 20px 10px;
+  }

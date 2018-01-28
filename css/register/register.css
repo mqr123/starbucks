@@ -1,0 +1,18 @@
+
+.write a:nth-of-type(1){
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: rgb(185, 167, 134);
+}
+.write a:nth-of-type(1):hover{
+  color: rgb(155, 137, 104);
+}
+.write > .number{
+  margin-bottom: 15px;
+}
+.write p:nth-of-type(1){
+  font-size: 1.2rem;
+  text-align: left;
+  color: rgb(151, 151, 151);
+  margin-bottom: 40px;
+}

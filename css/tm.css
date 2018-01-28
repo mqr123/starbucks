@@ -1,0 +1,258 @@
+body{
+  min-width: 1200px;
+}
+  /*网页中间部分的内容*/
+  .box{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-top: 100px;
+  }
+  /*遮罩效果*/
+  .mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*黑色半透明*/
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .photo img{
+    width: 100%;
+    height: 56%;
+  }
+  .adv{
+    width: 35;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    background: rgb(71, 71, 74);
+  }
+  .quality{
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    font-size: 15px;
+    color: rgb(178, 159, 92);
+  }
+  .tm{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    font-size: 40px;
+    color: white;
+  }
+  .world{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+  }
+  /*定位的做法*/
+  /*.cross1{
+    width: 225px;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    background: rgb(181, 159, 119);
+    position: absolute;
+    top: 55%;
+    left: 20%;
+  }
+  .cross2{
+    width: 225px;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    background: rgb(181, 159, 119);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+  }*/
+  /*浮动方法*/
+  .cross{
+    position: absolute;
+    top: 60%;
+    left: 38%;
+
+  }
+  .cross::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .cross1{
+    width: 225px;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    background: rgb(181, 159, 119);
+    float: left;
+  }
+  .cross2{
+    width: 225px;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    background: rgb(181, 159, 119);
+    float: right;
+    margin-left: 30px;
+  }
+  /*网页中间部分*/
+  .step{
+    color: rgb(112, 112, 112);
+    width: 100%;
+    margin-top: 85px;
+    text-align: center;
+  }
+  .limit{
+    font-size: 12px;
+    color: rgb(186, 163, 123);
+  }
+  .what{
+    margin-top: 20px;
+    font-size: 45px;
+    color: rgb(82, 82, 82);
+  }
+  .everyday{
+    width: 80%;
+    /*宽度高度中，上下为0；左右平均分布*/
+    margin: 0 auto;
+    font-size: 18px;
+    padding: 70px;
+    line-height: 28px;
+    text-align: left;
+    -webkit-column-count: 2;
+  }
+  .country{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  .country::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .Cleft{
+    width: 40%;
+    float: left;
+    /*border: 1px solid blue;*/
+  }
+  .Cright{
+    /*border: 1px solid red;*/
+    width: 59%;
+    margin-top: 100px;
+    float: right;
+    text-align: left;
+  }
+  /*风土条件的文字*/
+  .Cright1{
+    margin-left: 100px;
+    font-size: 30px;
+  }
+  .Cright2{
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 30px;
+    margin-left: 100px;
+  }
+  /*加工方法*/
+.way{
+  width: 100%;
+  height: 400px;
+  position: relative;
+  color: rgb(112, 112, 112);
+}
+.process1{
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+  z-index: 11;
+}
+.way1{
+  font-size:30px;
+}
+.way2{
+  margin-top: 30px;
+  width: 75%;
+  font-size: 16px;
+  line-height: 30px;
+}
+.process2 img{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  width: 60%;
+}
+/*咖啡品种*/
+.breed{
+  color: rgb(112, 112, 112);
+  margin-top: 50px;
+}
+/*人文故事*/
+.story{
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+  color: rgb(112, 112, 112);
+}
+.storyTop{
+  text-align: left;
+  font-size: 30px;
+}
+.storyBottom{
+  width: 80%;
+  margin-top: 30px;
+  text-align: left;
+  font-size: 16px;
+  line-height: 30px;
+}
+.storyPage{
+  margin-top: 50px;
+  width: 100%;
+  font-size: 0;
+}
+.storyPage img{
+  width: 25%;
+}
+/* 网页底部*/
+footer{
+  width: 100%;
+  height: 130px;
+  background: rgb(41, 41, 41);
+  position: relative;
+}
+footer::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.left{
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  font-size: 10px;
+  color: rgb(163, 163, 163);
+  float: left;
+}
+ul li{
+  margin: 4px;
+  list-style: none;
+}
+.right{
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  float: right;
+}
+.right img{
+  margin: 20px 10px;
+}

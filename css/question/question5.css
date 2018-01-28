@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 10px;
+  background: white;
+  min-width: 1200px;
+}
+/*上部*/
+.top1{
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 150px;
+}
+.top1 span:nth-of-type(1){
+  display: block;
+  width: 1200px;
+  font-size: 1.4rem;
+  color: rgb(166, 142, 100);
+  line-height: 50px;
+}
+.top1 span:nth-of-type(2){
+  display: block;
+  width: 1200px;
+  font-size: 4rem;
+  color: rgb(65, 65, 65);
+}
+.top1 span:nth-of-type(3){
+  display: block;
+  width: 1200px;
+  font-size: 1.8rem;
+  color: rgb(85, 85, 85);
+  line-height: 100px;
+}
+/*列表*/
+.top2{
+  font-size: 1.7rem;
+  width: 100%;
+  height: 40px;
+  background: rgb(31, 31, 31);
+}
+.top2_1{
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.top2 .top2_1 span{
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background: rgb(100, 100, 100);
+  margin: 0 20px;
+}
+.top2 .top2_1 a{
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(100, 100, 100);
+  line-height: 40px;
+}
+.top2 .top2_1 a:hover{
+  color: white;
+}
+/*下部内容：常见问题*/
+/*顶部提示*/
+.part{
+  padding: 50px 0;
+}
+.part > .point{
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.part > .point  p{
+  width: 400px;
+  margin: 0 auto;
+  padding: 30px 0;
+  font-size: 2.2rem;
+  color: rgb(69, 69, 69);
+}
+.part > .point span{
+  display: inline-block;
+  width: 120px;
+  height: 1px;
+  background: rgb(213, 213, 213);
+  margin: 0 auto;
+}
+/*中部问题*/
+.part > .question{
+  width: 1000px;
+  margin: 30px auto;
+  text-align: left;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 100px;
+}
+.part  .question h4{
+  font-size: 2rem;
+  margin: 30px 0;
+  line-height: 30px;
+}
+.part  .question p{
+  font-size: 1.6rem;
+  color: rgb(93, 93, 93);
+  line-height: 30px;
+}
+.part  .question >  a{
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: rgb(174, 148, 103);
+}
+.part .question > a:hover{
+  text-decoration: underline;
+  color: rgb(134, 108, 63);
+}
+.part  .question  p a{
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: rgb(174, 148, 103);
+}
+.question  li{
+  margin-left: 34px;
+  font-size: 1.6rem;
+  color: rgb(93, 93, 93);
+  line-height: 30px;
+}
+.question li img{
+  display: block;
+}
+.question li a{
+  text-decoration: none;
+  color: rgb(174, 148, 103);
+}

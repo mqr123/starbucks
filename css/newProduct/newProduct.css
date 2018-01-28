@@ -1,0 +1,92 @@
+.content{
+  width: 100%;
+  /*background: gold;*/
+  background: url(../../img/newProduct/contentbg.jpg) ;
+  padding-bottom: 100px;
+}
+
+
+.cont_1{
+  width: 100%;
+  height: 794px;
+  background: url(../../img/index/index_scroll_2.jpg) center no-repeat;
+  /*background-size: contain;*/
+  overflow: hidden;
+}
+@-webkit-keyframes musicAnimate1{
+  0%{
+    transform: rotate(-30deg);
+  }
+  25%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(30deg);
+  }
+  75%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(-30deg);
+  }
+}
+.cont_1 .musicbox{
+  display: block;
+  width: 100px;
+  height: 40px;
+  /*background: red;*/
+  position: absolute;
+  top: 120px;
+  right: 0;
+  z-index: 50;
+}
+
+
+
+.musicbox p{
+  width: 100px;
+  height: 40px;
+  display: inline-block;
+  animation: musicAnimate1 1s linear infinite;
+  background: url(../../img/newProduct/f001.png) center no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 19;
+  /*background: blue;*/
+}
+.musicbox input{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 45px;
+  z-index: 20;
+  opacity: 0;
+}
+.musicbox input:checked ~ p{
+  background: url(../../img/newProduct/f002.png) center no-repeat;
+  background-size: contain;
+  animation-play-state: paused;
+}
+
+
+
+
+
+
+
+@-webkit-keyframes bgAnimate{
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(10);
+  }
+}
+.cont_1 .bg{
+  width: 100%;
+  height: 794px;
+  animation: bgAnimate 5s ease forwards;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+
+      .box{
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        background: skyblue;
+        position: relative;
+        /*overflow: hidden;*/
+      }
+      .mask{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        border-radius: 100%;
+        background: #333333;
+
+        transition: all 0.35s ease-in-out;
+      }
+      .pic{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: blue;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        border-radius: 100%;
+
+        z-index: 11;
+        transition: all 0.35s ease-in-out;
+        transform-origin: 95% 40%;
+
+      }
+
+.pic:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    top: 40%;
+    left: 95%;
+    margin: -5px 0 0 -5px;
+    background: red;
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.9);
+}
+
+.box:hover .pic {
+    transform: rotate(-150deg);
+}
+
+
+
+    .box1{
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      margin-left: 500px;
+      background: red;
+      position: relative;
+    }
+    .mask1{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      border-radius: 100%;
+      background: #333333;
+      transition: all 0.35s ease-in-out;
+    }
+    .pic1{
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: blue;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 100%;
+      z-index: 11;
+      transition: all 0.35s ease-in-out;
+      transform-origin: left center;
+    }
+    .box1:hover .pic1 {
+        transform: rotateY(-180deg);
+    }
+
+    </style>
+  </head>
+  <body>
+     <div class="box">
+       <div class="mask"></div>
+       <div class="pic">
+         <!-- <span></span> -->
+       </div>
+     </div>
+
+
+     <div class="box1">
+       <div class="mask1">
+
+       </div>
+       <div class="pic1">
+
+       </div>
+
+     </div>
+  </body>
+</html>

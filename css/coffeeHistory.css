@@ -1,0 +1,186 @@
+
+  /*照片部分*/
+  .photo{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+  }
+  .photo1{
+    width: 100%;
+  }
+  .photo .photo1 img{
+    width: 100%;
+  }
+  /*文字部分*/
+  .adv{
+    width: 35px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    line-height: 20px;
+    background: rgb(71, 71, 74);
+  }
+  .know{
+    position: absolute;
+    top: 42%;
+    left: 45%;
+    font-size: 13px;
+    color: rgb(176, 151, 116);
+  }
+  .coffee{
+    position: absolute;
+    top: 54%;
+    left: 45%;
+    font-size: 40px;
+    color: white;
+  }
+  .step{
+    width: 100%;
+    background: rgb(240, 240, 240);
+    text-align: center;
+    position: relative;
+  }
+  .culture{
+    position: absolute;
+    top: 100px;
+    left: 40%;
+    font-size: 13px;
+    color: rgb(181, 159, 119);
+  }
+  /*第一部分*/
+  .history{
+    /*border: 1px solid red;*/
+    position: absolute;
+    top: 150px;
+    left: 30%;
+  }
+  .history::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .img{
+    float: left;
+  }
+  .img img{
+    width: 154px;
+    height: 154px;
+    border-radius: 154px;
+  }
+  .w{
+    /*border: 1px solid yellow;*/
+    margin-left: 50px;
+    float: right;
+    position: absolute;
+    top: 0;
+    left: 65%;
+  }
+  .w1{
+    position: absolute;
+    top: 30px;
+    left: 0.3%;
+    width: 170px;
+    /*border: 1px solid red;*/
+    font-size: 30px;
+    color: rgb(112, 112, 112);
+  }
+  /*.w 下的.w1 的hover 效果*/
+  .w .w1:hover{
+    text-decoration: underline;
+  }
+  .w2{
+    text-align: left;
+    margin-top: 80px;
+    margin-left: 40px;
+    width: 500px;
+    font-size: 16px;
+    color: rgb(112, 112, 112);
+  }
+  /*.w 下的.w2的hover 效果*/
+  .w .w2:hover{
+    text-decoration: underline;
+  }
+  /*第2部分*/
+  .history1{
+    top: 350px;
+  }
+  .w11{
+    position: absolute;
+    top: 30px;
+    left: 3%;
+    /*border: 1px solid red;*/
+    width: 380px;
+    font-size: 30px;
+    color: rgb(112, 112, 112);
+  }
+  .w .w11:hover{
+    text-decoration: underline;
+  }
+  /*第3部分*/
+  .history2{
+    top: 550px;
+  }
+  /*第4部分*/
+  .history3{
+    top: 750px;
+  }
+  /*第5部分*/
+  .history4{
+    top: 950px;
+  }
+  /*第6部分*/
+  .history5{
+    top: 1150px;
+  }
+  .moreBeauty{
+    width: 100%;
+    height: 40px;
+    display: inline-block;
+    position: absolute;
+    bottom:160px;
+    left: 0;
+    text-decoration: none;
+    font-size: 24px;
+    color: #333;
+  }
+
+  /* 网页底部*/
+  footer{
+    margin-top: 1450px;
+    width: 100%;
+    height: 130px;
+    background: rgb(41, 41, 41);
+    position: relative;
+  }
+  footer::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .left{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    font-size: 10px;
+    color: rgb(163, 163, 163);
+    float: left;
+  }
+  ul li{
+    margin: 4px;
+    list-style: none;
+  }
+  .right{
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    float: right;
+  }
+  .right img{
+    margin: 20px 10px;
+  }
+  /*心得体会：
+    1：处理最大的图片时，不知如何出现淡淡的阴影效果，最后选择了截图方式；
+    2：网页中，中间文字部分的定位没有做到随浏览器的缩放而缩放；*/

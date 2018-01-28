@@ -1,0 +1,169 @@
+body{
+  text-align: left;
+}
+  /*网页中最大图片的部分*/
+  .photo{
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+  }
+  .mask{
+    /*坑点：必须把宽高设置好后进行定位*/
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .photo1{
+    width: 100%;
+  }
+  .photo1 img{
+    width: 100%;
+  }
+  .adv{
+    width: 35px;
+    height: 20px;
+    line-height: 20px;
+    color: rgb(180, 180, 181);
+    background: rgb(71, 71, 74);
+    position: absolute;
+    top: 3%;
+    right: 4%;
+  }
+  .duty{
+  color: rgb(181, 154, 93);
+  letter-spacing: 2px;
+  font-size: 14px;
+  position: absolute;
+  top: 38%;
+  left: 48%;
+  }
+  .plant{
+    color: white;
+    font-size: 40px;
+    line-height: 46px;
+    width: 50%;
+    margin: 0 auto;
+    position: absolute;
+    top: 40%;
+    left: 28%;
+  }
+  .link{
+    color: white;
+    font-size: 18px;
+    line-height: 28px;
+    width: 50%;
+    margin: 0 auto;
+    position: absolute;
+    top: 60%;
+    left: 28%;
+  }
+  /*网页中内容部分*/
+  /*第一部分*/
+  .content{
+    /*内容部分的宽度不用设置。会出现错误现象*/
+    /*width: 100%;*/
+    padding: 100px;
+    background: rgb(240, 240, 240);
+  }
+  .content1{
+    width: 50%;
+    margin: 0 auto;
+    color: rgb(112, 112, 112);
+  }
+  .content1::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .Cleft{
+    width: 20%;
+    float: left;
+  }
+  .Cleft img{
+    width: 154px;
+    height: 154px;
+    border-radius: 154px;
+  }
+  .Cright{
+    width: 79%;
+    float: right;
+    position: relative;
+  }
+  .c1{
+    width:80%;
+    height: 60px;
+    font-size: 34px;
+    position: absolute;
+    top: 26px;
+    left: 30%;
+  }
+  .c2{
+    width: 80%;
+    font-size: 18px;
+    position: absolute;
+    top: 100px;
+    left: 30%;
+  }
+  /*c1和c2的hover效果*/
+  .Cright .c1:hover{
+    text-decoration: underline;
+  }
+  .Cright .c2:hover{
+    text-decoration: underline;
+  }
+  /*第2部分*/
+  .hand1{
+    margin-top: 80px;
+  }
+  /*第3部分*/
+  .hand2{
+    margin-top: 80px;
+  }
+  /*第4部分*/
+  .hand3{
+    margin-top: 80px;
+  }
+  /*第5部分*/
+  .hand4{
+    margin-top: 80px;
+  }
+  /*第6部分*/
+  .hand5{
+    margin-top: 80px;
+  }
+  /* 网页底部*/
+  footer{
+    width: 100%;
+    height: 130px;
+    background: rgb(41, 41, 41);
+    position: relative;
+  }
+  footer::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .left{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    font-size: 10px;
+    color: rgb(163, 163, 163);
+    float: left;
+  }
+  ul li{
+    margin: 4px;
+    list-style: none;
+  }
+  .right{
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    float: right;
+  }
+  .right img{
+    margin: 20px 10px;
+  }

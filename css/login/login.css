@@ -1,0 +1,369 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 10px;
+  background: white;
+}
+/*最外层*/
+.wrap{
+  width: 100%;
+  background: url(../../img/login/login_bg.png) top right;
+  background-size: content;
+  /*背景图纵向排布*/
+  background-repeat: repeat-y;
+}
+.content{
+  width: 800px;
+  margin: 0 auto;
+  padding: 100px 0px;
+  margin-top: 100px;
+}
+/*登录提示*/
+.point{
+  margin: 0 auto;
+  width: 800px;
+}
+.point h3{
+  font-size: 4rem;
+  font-weight: normal;
+  text-align: center;
+  line-height: 100px;
+  color: rgb(61, 61, 61);
+}
+.point span{
+  display: block;
+  width: 150px;
+  height: 20px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgb(213, 213, 213);
+}
+.point p{
+  font-size: 2rem;
+  color: rgb(134, 134, 134);
+  text-align: center;
+  line-height: 100px;
+}
+/*登录内容*/
+.write{
+  margin: 0 auto;
+  padding: 50px 100px;
+  width: 500px;
+  text-align: left;
+  /*height: 400px;*/
+  background: rgb(239, 239, 239);
+  color: rgb(100, 100, 100);
+  font-size: 1.6rem;
+  position: relative;
+}
+
+/*整个猫的父级盒子 position参考对象*/
+.write .box{
+  width: 100%;
+  height: 250px;
+  /*background: red;*/
+  position: relative;
+  z-index: 1;
+}
+/*牌子*/
+.login{
+  width: 100%;
+  height: 190px;
+  /*background: blue;*/
+  position: absolute;
+  top: 74px;
+  left: 0;
+  z-index: 2;
+  display: block;
+}
+/*遮罩牌子 用来遮挡左右手臂*/
+.mask{
+  width: 100%;
+  /*渐变是为了更好的显示出牌子上缘的轮廓对比*/
+  background: linear-gradient(to bottom, rgb(230, 230, 230), rgb(239, 239, 239));
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding-top: 40px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.mask > input{
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 0px 10px;
+  width: 478px;
+  height: 40px;
+  display: block;
+  outline: none;
+  border: 1px solid rgb(213, 213, 213);
+}
+.mask > input:hover{
+  border: 1px solid rgb(166, 142, 100);
+}
+/*猫头*/
+.head{
+  width: 156px;
+  height: 80px;
+  position: absolute;
+  top: -74px;
+  left: 50%;
+  margin-left: -78px;
+  display: block;
+  z-index: 3;
+}
+/*猫鼻子*/
+.nose{
+  width: 11px;
+  position: absolute;
+  top:-5px;
+  left: 50%;
+  margin-left: -5.5px;
+  display: block;
+  z-index: 10;
+}
+/*左圆手*/
+.prehand1{
+  width: 30px;
+  position: absolute;
+  top: -10px;
+  left: 160px;
+  z-index: 2;
+  display: block;
+}
+/*右圆手*/
+.prehand2{
+  width: 30px;
+  position: absolute;
+  top: -10px;
+  right: 160px;
+  z-index: 2;
+  display: block;
+}
+
+.login:hover .prehand1{
+  display: none;
+}
+.login:hover .prehand2{
+  display: none;
+}
+.login:hover .head{
+  /*是为了让头部带鼻子一起居于最高层（切鼻子图片前有意义）*/
+  z-index: 4;
+}
+/*左臂*/
+.lefthand{
+  width: 30px;
+  position: absolute;
+  top: -30px;
+  left: 178px;
+  z-index: 2;
+  display: block;
+  opacity: 0;
+
+  transform: rotate(-90deg);
+  transform-origin: 90% 90%;
+}
+/*右臂*/
+.righthand{
+  width: 30px;
+  position: absolute;
+  top: -30px;
+  right: 175px;
+  z-index: 2;
+  display: block;
+  opacity: 0;
+
+  transform: rotate(90deg);
+  transform-origin: 10% 90%;
+}
+/*手臂摆动挡眼睛动画路径*/
+@-webkit-keyframes kkkleft{
+  from{
+    transform: rotate(-90deg);
+  }
+  to{
+    transform: rotate(60deg);
+  }
+}
+
+@-webkit-keyframes kkkright{
+  from{
+    transform: rotate(90deg);
+  }
+  to{
+    transform: rotate(-60deg);
+  }
+}
+
+.login:hover .lefthand{
+  animation: kkkleft 0.4s ease-in-out forwards;
+  opacity: 1;
+  z-index: 5;
+}
+.login:hover .righthand{
+  animation: kkkright 0.4s ease-in-out forwards;
+  opacity: 1;
+  z-index: 5;
+}
+
+.login:hover .mask{
+  z-index: 6;
+}
+
+
+/*密码是否可见*/
+.see {
+  width: 30px;
+  height: 40px;
+  position: absolute;
+  bottom: 35px;
+  right: 30px;
+  /*background: green;*/
+}
+.see input{
+  opacity: 0;
+  z-index: 50;
+  position: absolute;
+  top: 12px;
+  left: 10px;
+}
+.see span{
+  display: inline-block;
+  width: 30px;
+  height: 40px;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  background: url(../../img/login/nosee.png) center no-repeat;
+}
+.see input:checked + span{
+  background: url(../../img/login/see.png) center no-repeat;
+}
+
+
+
+
+
+/*自动登录单选框*/
+.radioSet{
+  display: inline-block;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+.radioSet span{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+  border: 1px solid rgb(213, 213, 213);
+  position: absolute;
+  top: 1px;
+  left: 0;
+}
+.radioSet input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 50;
+}
+/*设置按钮点击后的样式*/
+.radioSet input:checked + span{
+  width: 17px;
+  height: 17px;
+  background: url(../../img/login/mainTag.png);
+  background-size: cover;
+  border: none;
+}
+/*验证码*/
+.captcha p{
+  font-size: 1.4rem;
+  line-height: 40px;
+}
+.captcha span{
+  margin-left: 20px;
+  display: inline-block;
+  width: 53px;
+  height: 53px;
+  background: url(../../img/login/before.png) center no-repeat;
+}
+.captcha span:hover{
+  background: url(../../img/login/after.png) 1px 0px no-repeat;
+  transition: all 0.2s;
+}
+/*登录*/
+.write > span{
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 479px;
+  height: 50px;
+  border: 2px solid rgb(166, 142, 100);
+  text-align: center;
+  color: rgb(166, 142, 100);
+  line-height: 50px;
+  font-size: 1.4rem;
+}
+.write > span:hover{
+  color: white;
+  background: rgb(166, 142, 100);
+}
+.write > p{
+  text-align: center;
+}
+.write > p a{
+  text-decoration: none;
+  font-size: 1.4rem;
+  line-height: 80px;
+  color: rgb(166, 142, 100);
+}
+.write > p a:hover{
+  color: rgb(116, 92, 50);
+}
+/*分界线OR*/
+.write > .boundary{
+  margin: 20px auto;
+  width: 500px;
+  height: 1px;
+  background: rgb(213, 213, 213);
+  position: relative;
+}
+.boundary span{
+  background: rgb(235, 235, 235);
+  display: inline-block;
+  font-size: 1.6rem;
+  text-align: center;
+  width: 50px;
+  color: rgb(210, 210, 210);
+  position: absolute;
+  top: -7px;
+  left: 240px;
+}
+/*创建账户*/
+.write  span:nth-of-type(2){
+  border: 2px solid rgb(84, 84, 84);
+}
+.write span:nth-of-type(2):hover{
+  background: rgb(84, 84, 84);
+}
+.write span:nth-of-type(2) a{
+  text-decoration: none;
+    color: rgb(84, 84, 84);
+}
+.write span:nth-of-type(2):hover a{
+  color: white;
+}
+.write > .about{
+  width: 410px;
+  color: rgb(151, 151, 151);
+  margin: 20px auto;
+}
+.write > .about a{
+  line-height: 30px;
+}

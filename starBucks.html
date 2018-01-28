@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>星巴克</title>
+    <link rel="shortcut icon" href="img/public/favicon.ico">
+    <link rel="stylesheet" href="css/public/header.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/public/footer.css" media="screen" title="no title" charset="utf-8">
+    <style media="screen">
+    .content{
+      margin-top: 100px;
+      width: 100%;
+      background: white;
+      font-size: 0;
+    }
+
+    .content .starbucks{
+      width: 100%;
+    }
+    .starbucks video{
+      width: 100%;
+    }
+
+
+
+.run{
+  padding: 10px;
+  background-color:rgba(255, 255, 255, 0.1);
+  position: fixed;
+  top: 100px;
+  left: 0;
+  z-index: 10;
+}
+.run span{
+	font-size:24px;
+  font-weight: 500;
+  /*color: #222;*/
+  color: rgb(26, 26, 26);
+  white-space: 5px;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+
+
+      <!-- 侧栏 -->
+      <!-- 利用target锚点跳转方式实现侧拉 -->
+      <div id="window">
+        <div class="mainMask"><a href="#"></a></div>
+
+         <ul class="list_other">
+           <li><a href="https://www.starbucks.com.cn/en">English</a></li>
+           <li><a href="http://www.starbucks.com.cn/cn/stores">星巴克门店</a></li>
+           <li><a href="https://starbucks.tmall.com/">天猫旗舰店</a></li>
+         </ul>
+         <ul class="list_home">
+           <li><a href="#">首页</a></li>
+           <li>
+             <a href="#">
+               新品推荐
+               <img src="img/public/menu_icon_right.png" alt="" />
+             </a>
+             <div class="newProductitem">
+                <a href="page/newProduct/newProduct.html">新年送出新心意</a>
+                <a href="page/newProduct/huanXinShi.html">星巴克焕新食</a>
+                <a href="page/newProduct/dangjixinpin.html">当季新品</a>
+             </div>
+
+           </li>
+           <li><a href="page/club.html">星享俱乐部</a></li>
+           <li><a href="page/app.html">星巴克移动应用</a></li>
+           <li><a href="page/card.html">星礼卡</a></li>
+           <li>
+             <a href="#">
+               咖啡文化
+               <img src="img/public/menu_icon_right.png" alt="" />
+             </a>
+             <div class="coffeeitem">
+                <a href="page/coffeeHistory.html">咖啡文化</a>
+                <a href="page/TM.html">星巴克臻选™咖啡</a>
+                <a href="page/how.html">如何冲泡咖啡</a>
+             </div>
+           </li>
+           <li>
+             <a href="#">
+               饮品美食
+               <img src="img/public/menu_icon_right.png" alt="" />
+             </a>
+             <div class="nicefooditem">
+                <a href="page/niceFood/drink.html">饮品</a>
+                <a href="page/niceFood/starbucksFood.html">星巴克美食</a>
+                <a href="page/niceFood/starbucksCoffee.html">星巴克咖啡</a>
+                <a href="page/niceFood/starbucksVIA.html">星巴克VIA® 免煮咖啡</a>
+                <a href="page/niceFood/teavana.html">茶瓦纳™</a>
+             </div>
+           </li>
+           <li>
+             <a href="#">
+               关于我们
+               <img src="img/public/menu_icon_right.png" alt="" />
+             </a>
+             <div class="aboutusItem">
+                <a href="page/news.html">企业新闻</a>
+                <a href="page/values.html">我们的使命和价值观</a>
+                <a href="page/duty.html">星巴克责任</a>
+                <a href="page/china.html">工作在星巴克中国</a>
+                <a href="page/join.html">加入星巴克</a>
+                <a href="page/chinain.html">星巴克在中国</a>
+                <a href="page/history.html">历史回顾</a>
+             </div>
+           </li>
+           <li>
+             <a href="#">
+               帮助中心
+               <img src="img/public/menu_icon_right.png" alt="" />
+             </a>
+             <div class="helperItem">
+                <a href="page/question/question1.html">常见问题</a>
+                <a href="page/contact.html">联系我们</a>
+                <a href="page/terms.html">使用条款</a>
+                <a href="page/privacy.html">隐私权政策</a>
+             </div>
+           </li>
+         </ul>
+      </div>
+
+
+
+      <!-- 页头 -->
+      <header>
+        <div class="head_left">
+          <a href="#window" target="_parent">
+            <figure>
+              <img src="img/public/menu_icon.png" alt="" />
+              <figcaption>菜单</figcaption>
+            </figure>
+          </a>
+        </div>
+
+        <div class="head_mid">
+           <a href="index.html" class="maskgo"><img src="img/public/logo.png" alt="" class="logo" /></a>
+        </div>
+        <div class="head_right">
+          <p>星享俱乐部</p>
+          <p><a href="page/login.html">登录</a>或<a href="page/register.html">注册</a></p>
+        </div>
+      </header>
+
+
+
+
+      <!-- 页中 -->
+      <div class="content">
+          <!-- 星巴克广告 -->
+          <div class="starbucks">
+            <video src="video/starbucks.mp4"  muted="true" autoplay  loop preload>
+          </div>
+          <div class="run">
+            <!-- 滚动条 -->
+            <!-- 鼠标移动到上面时停止与继续滚动
+            onmouseout=this.start()
+            onmouseover=this.stop() -->
+            <marquee scrollamount="10" scrolldelay="0" onmouseout=this.start()
+            onmouseover=this.stop()>
+               <span style="margin-right:80%">星巴克首次在中国推出旗下高端茶品牌——TEAVANA ，凭借品质卓越的茶原料和精心研发的配方，TEAVANA将带来星巴克专属的时尚茶饮新体验。</span>
+               <span>持有星享卡的会员，可在购买星巴克产品时积累星星，兑换星享俱乐部会员好礼！每累积消费50元可获赠一颗星星。星星越多，会员等级越高，好礼越丰富！</span>
+            </marquee>
+          </div>
+      </div>
+
+
+
+      <!-- 页尾 -->
+      <footer>
+        <p>© 2017 Starbucks Corporation.</p>
+        <p>All rights reserved. 沪ICP备17003747号 </p>
+        <p>
+          <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402000253"><img src="img/public/icpicon.png"></a>
+          沪公网安备 31010402000253号
+        </p>
+        <div class="wechat">
+          <img src="img/public/wechat.svg" alt=""/>
+          <img src="img/public/wsg-qrcode.png" alt="" class="qr_code"/>
+        </div>
+        <a href="http://www.weibo.com/starbucks?is_hot=1">
+           <img src="img/public/weibo.svg" alt="" class="weibo"/>
+        </a>
+      </footer>
+
+
+    </div>
+  </body>
+</html>
